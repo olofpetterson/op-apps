@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OP Apps - A collection of developer tools for iOS. ProbePad, GuardPad, DeltaPad, and BeaconPad.">
+
+  <meta property="og:title" content="OP Apps - Developer Tools for iOS">
+  <meta property="og:description" content="A collection of powerful developer tools for iPhone and iPad.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://olofpetterson.github.io/op-apps/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OP Apps - Developer Tools for iOS">
+
+  <link rel="alternate" hreflang="en" href="?lang=en">
+  <link rel="alternate" hreflang="de" href="?lang=de">
+  <link rel="alternate" hreflang="es" href="?lang=es">
+  <link rel="alternate" hreflang="ja" href="?lang=ja">
+
+  <link rel="stylesheet" href="shared/styles.css">
+  <style>
+    :root {
+      --color-accent: #7C3AED;
+      --color-accent-hover: #8B5CF6;
+    }
+  </style>
+  <title>OP Apps - Developer Tools for iOS</title>
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-content">
+      <a href="index.html" class="logo" aria-label="OP Apps Home">
+        <span class="logo-icon" style="font-size: 1.5rem;">&#128241;</span>
+        OP Apps
+      </a>
+      <div class="nav-links"></div>
+      <div class="language-switcher" role="group" aria-label="Language selection">
+        <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+        <button class="lang-btn" data-lang="de" aria-label="Deutsch">DE</button>
+        <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+        <button class="lang-btn" data-lang="ja" aria-label="Japanese">JA</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hub-hero" aria-labelledby="hub-title">
+    <div class="container">
+      <h1 id="hub-title" data-i18n="hub.title">Developer Tools for iOS</h1>
+      <p class="hero-subtitle" data-i18n="hub.subtitle">A collection of powerful tools for developers, built for iPhone and iPad.</p>
+    </div>
+  </section>
+
+  <section class="apps-section" aria-labelledby="apps-title">
+    <div class="container">
+      <h2 id="apps-title" class="visually-hidden">Our Apps</h2>
+      <div class="apps-grid">
+        <a href="probepad/" class="app-card" style="--card-accent: #00FF66;">
+          <div class="app-card-icon" style="background: linear-gradient(135deg, #00FF66 0%, #00CC52 100%);">&#128268;</div>
+          <div class="app-card-content">
+            <h3>ProbePad</h3>
+            <p data-i18n="hub.probepad.tagline">API Client for iOS</p>
+            <span class="app-card-badge available" data-i18n="hub.badge.available">Available</span>
+          </div>
+        </a>
+
+        <a href="guardpad/" class="app-card" style="--card-accent: #FFB000;">
+          <div class="app-card-icon" style="background: linear-gradient(135deg, #FFB000 0%, #FF9500 100%);">&#128737;</div>
+          <div class="app-card-content">
+            <h3>GuardPad</h3>
+            <p data-i18n="hub.guardpad.tagline">HTTP Security Scanner</p>
+            <span class="app-card-badge available" data-i18n="hub.badge.available">Available</span>
+          </div>
+        </a>
+
+        <a href="deltapad/" class="app-card" style="--card-accent: #00BFFF;">
+          <div class="app-card-icon" style="background: linear-gradient(135deg, #00BFFF 0%, #0099CC 100%);">&#128295;</div>
+          <div class="app-card-content">
+            <h3>DeltaPad</h3>
+            <p data-i18n="hub.deltapad.tagline">10 Essential Dev Tools</p>
+            <span class="app-card-badge available" data-i18n="hub.badge.available">Available</span>
+          </div>
+        </a>
+
+        <a href="beaconpad/" class="app-card" style="--card-accent: #FF6B6B;">
+          <div class="app-card-icon" style="background: linear-gradient(135deg, #FF6B6B 0%, #FF4757 100%);">&#128225;</div>
+          <div class="app-card-content">
+            <h3>BeaconPad</h3>
+            <p data-i18n="hub.beaconpad.tagline">API Health Dashboard</p>
+            <span class="app-card-badge coming-soon" data-i18n="hub.badge.comingsoon">Coming Soon</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="hub-about" aria-labelledby="about-title">
+    <div class="container container--narrow">
+      <h2 id="about-title" data-i18n="hub.about.title">About OP Apps</h2>
+      <p data-i18n="hub.about.desc">All apps are designed with privacy in mind. Your data stays on your device, with optional iCloud sync for PRO users. No tracking, no ads, no subscriptions.</p>
+      <div class="hub-features">
+        <div class="hub-feature">
+          <span class="hub-feature-icon">&#128274;</span>
+          <span data-i18n="hub.about.privacy">Privacy First</span>
+        </div>
+        <div class="hub-feature">
+          <span class="hub-feature-icon">&#128683;</span>
+          <span data-i18n="hub.about.noads">No Ads</span>
+        </div>
+        <div class="hub-feature">
+          <span class="hub-feature-icon">&#9989;</span>
+          <span data-i18n="hub.about.onetimepurchase">One-Time Purchase</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p class="copyright" data-i18n="footer.copyright">&copy; 2026 Olof Petterson. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="shared/i18n-base.js"></script>
+</body>
+</html>

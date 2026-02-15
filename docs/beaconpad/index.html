@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BeaconPad - API Health Monitor for iPhone & iPad. Monitor your APIs with status dots, sparklines, SSL warnings, and push notifications.">
+
+  <meta property="og:title" content="BeaconPad - API Health Dashboard">
+  <meta property="og:description" content="Monitor your APIs with real-time status indicators, sparklines, SSL certificate warnings, and push notifications.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://olofpetterson.github.io/op-apps/beaconpad/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BeaconPad - API Health Dashboard">
+
+  <link rel="alternate" hreflang="en" href="?lang=en">
+  <link rel="alternate" hreflang="de" href="?lang=de">
+  <link rel="alternate" hreflang="es" href="?lang=es">
+  <link rel="alternate" hreflang="ja" href="?lang=ja">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="../shared/styles.css">
+  <style>
+    :root {
+      --color-accent: #FF6B6B;
+      --color-accent-hover: #FF8585;
+    }
+    .app-icon {
+      box-shadow: 0 20px 60px rgba(255, 107, 107, 0.2);
+    }
+  </style>
+  <title>BeaconPad - API Health Dashboard</title>
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-content">
+      <a href="index.html" class="logo" aria-label="BeaconPad Home">
+        <span class="logo-icon" style="font-size: 1.5rem;">&#128225;</span>
+        BeaconPad
+      </a>
+      <div class="nav-links">
+        <a href="support.html" data-i18n="nav.support">Support</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+      </div>
+      <div class="language-switcher" role="group" aria-label="Language selection">
+        <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+        <button class="lang-btn" data-lang="de" aria-label="Deutsch">DE</button>
+        <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+        <button class="lang-btn" data-lang="ja" aria-label="Japanese">JA</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <div class="app-icon" style="width: 120px; height: 120px; background: linear-gradient(135deg, #FF6B6B 0%, #FF4757 100%); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; margin: 0 auto var(--spacing-lg);">&#128225;</div>
+      <span class="coming-soon-badge" data-i18n="hero.comingsoon">Coming Soon</span>
+      <h1 id="hero-title" data-i18n="hero.title">API Health Dashboard</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">BeaconPad monitors your APIs around the clock. Get instant status updates, response time sparklines, SSL certificate warnings, and push notifications when things go wrong.</p>
+      <div class="hero-badges">
+        <span class="badge" data-i18n="hero.badge.realtime">Real-time Monitoring</span>
+        <span class="badge" data-i18n="hero.badge.notifications">Push Notifications</span>
+        <span class="badge" data-i18n="hero.badge.ssl">SSL Warnings</span>
+      </div>
+      <a href="#" class="cta-button" style="opacity: 0.5; pointer-events: none;" data-i18n="hero.cta">
+        Coming Soon
+      </a>
+    </div>
+  </section>
+
+  <section class="features" aria-labelledby="features-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="features-title" data-i18n="features.title">Never Miss a Beat</h2>
+        <p data-i18n="features.subtitle">Comprehensive API monitoring, designed for mobile.</p>
+      </div>
+      <div class="features-grid">
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128994;</span>
+          <h3 data-i18n="features.dashboard.title">Monitor Dashboard</h3>
+          <p data-i18n="features.dashboard.desc">See all your APIs at a glance with color-coded status indicators.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128200;</span>
+          <h3 data-i18n="features.sparklines.title">Response Sparklines</h3>
+          <p data-i18n="features.sparklines.desc">Mini charts showing response time trends over the last 24 hours.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128274;</span>
+          <h3 data-i18n="features.ssl.title">SSL Warnings</h3>
+          <p data-i18n="features.ssl.desc">Get notified before your SSL certificates expire.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128276;</span>
+          <h3 data-i18n="features.notifications.title">Push Notifications</h3>
+          <p data-i18n="features.notifications.desc">Instant alerts when an endpoint goes down or recovers.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#9203;</span>
+          <h3 data-i18n="features.background.title">Background Checks</h3>
+          <p data-i18n="features.background.desc">Monitor your APIs even when the app is closed.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128202;</span>
+          <h3 data-i18n="features.history.title">Uptime History</h3>
+          <p data-i18n="features.history.desc">Track uptime percentages and incident history over time.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="screenshots" aria-labelledby="screenshots-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="screenshots-title" data-i18n="screenshots.title">See It in Action</h2>
+      </div>
+      <div class="screenshots-carousel" role="region" aria-label="App screenshots">
+        <div class="screenshot-placeholder" data-i18n="screenshots.placeholder">Screenshots coming soon</div>
+        <div class="screenshot-placeholder" data-i18n="screenshots.placeholder">Screenshots coming soon</div>
+        <div class="screenshot-placeholder" data-i18n="screenshots.placeholder">Screenshots coming soon</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pro-section" aria-labelledby="pro-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="pro-title" data-i18n="pro.title">Unlock PRO</h2>
+        <p data-i18n="pro.subtitle">One-time purchase. No subscription.</p>
+      </div>
+      <div class="pro-card">
+        <span class="pro-badge">PRO</span>
+        <p class="pro-price">$6.99</p>
+        <p class="pro-price-note" data-i18n="pro.onetimepurchase">One-time purchase</p>
+        <ul class="pro-features">
+          <li data-i18n="pro.feature1">Unlimited monitors</li>
+          <li data-i18n="pro.feature2">1-minute check intervals</li>
+          <li data-i18n="pro.feature3">Push notifications</li>
+          <li data-i18n="pro.feature4">SSL expiry alerts</li>
+          <li data-i18n="pro.feature5">iCloud sync</li>
+        </ul>
+        <a href="#" class="cta-button" style="opacity: 0.5; pointer-events: none;" data-i18n="hero.cta">Coming Soon</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="download" id="download" aria-labelledby="download-title">
+    <div class="container">
+      <h2 id="download-title" data-i18n="download.title">Coming Soon</h2>
+      <p data-i18n="download.subtitle">BeaconPad is currently under development. Stay tuned for updates.</p>
+    </div>
+  </section>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="../">All Apps</a>
+        <a href="support.html" data-i18n="footer.support">Support</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+      </nav>
+      <p class="copyright" data-i18n="footer.copyright">&copy; 2026 Olof Petterson. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="../shared/i18n-base.js"></script>
+</body>
+</html>

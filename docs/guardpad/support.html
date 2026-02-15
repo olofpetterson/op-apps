@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GuardPad Support - Get help with GuardPad HTTP security scanner. FAQ, troubleshooting guides, and contact information.">
+
+  <meta property="og:title" content="Support - GuardPad">
+  <meta property="og:description" content="Get help with GuardPad HTTP security scanner.">
+  <meta property="og:type" content="website">
+
+  <link rel="alternate" hreflang="en" href="?lang=en">
+  <link rel="alternate" hreflang="de" href="?lang=de">
+  <link rel="alternate" hreflang="es" href="?lang=es">
+  <link rel="alternate" hreflang="ja" href="?lang=ja">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="../shared/styles.css">
+  <style>
+    :root {
+      --color-accent: #FFB000;
+      --color-accent-hover: #FFC233;
+    }
+  </style>
+  <title>Support - GuardPad</title>
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-content">
+      <a href="index.html" class="logo" aria-label="GuardPad Home">
+        <span class="logo-icon" style="font-size: 1.5rem;">&#128737;</span>
+        GuardPad
+      </a>
+      <div class="nav-links">
+        <a href="support.html" data-i18n="nav.support">Support</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+      </div>
+      <div class="language-switcher" role="group" aria-label="Language selection">
+        <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+        <button class="lang-btn" data-lang="de" aria-label="Deutsch">DE</button>
+        <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+        <button class="lang-btn" data-lang="ja" aria-label="Japanese">JA</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <h1 data-i18n="support.title">Support</h1>
+      <p data-i18n="support.subtitle">Get help with GuardPad</p>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div class="container container--narrow">
+
+      <section class="content-section" aria-labelledby="faq-title">
+        <h2 id="faq-title" data-i18n="support.faq.title">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q1">What security headers does GuardPad check?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a1">GuardPad analyzes 8 critical headers: Content-Security-Policy, Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, X-XSS-Protection, and Cross-Origin policies.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q2">How accurate is the security grade?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a2">The grade is based on industry best practices and OWASP recommendations. We check for presence and correct configuration of security headers.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q3">Can I scan internal/private URLs?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a3">GuardPad can only scan publicly accessible URLs. Internal or localhost URLs cannot be reached from your device.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q4">What's included in the SSL/TLS analysis?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a4">We check certificate validity, expiration date, issuer, subject, key strength, and supported protocols. PRO includes detailed cipher suite analysis.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q5">How do I export a security report?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a5">After scanning, tap the share button to export as PDF or JSON. PRO is required for export functionality.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q6">Does GuardPad store my scan data?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a6">All scan data is stored locally on your device. With PRO, you can enable iCloud sync to access your history across devices.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="troubleshooting-title">
+        <h2 id="troubleshooting-title" data-i18n="support.troubleshooting.title">Troubleshooting</h2>
+
+        <div class="whats-new-list">
+          <div class="whats-new-item">
+            <span class="whats-new-icon" aria-hidden="true">&#9203;</span>
+            <div class="whats-new-content">
+              <h3 data-i18n="support.troubleshooting.item1.title">Scan fails or times out</h3>
+              <p data-i18n="support.troubleshooting.item1.desc">Check your internet connection and verify the URL is correct and publicly accessible. Some servers may block automated requests.</p>
+            </div>
+          </div>
+
+          <div class="whats-new-item">
+            <span class="whats-new-icon" aria-hidden="true">&#128274;</span>
+            <div class="whats-new-content">
+              <h3 data-i18n="support.troubleshooting.item2.title">SSL certificate errors</h3>
+              <p data-i18n="support.troubleshooting.item2.desc">If a site has an invalid or self-signed certificate, GuardPad will report this as a security issue. This is expected behavior.</p>
+            </div>
+          </div>
+
+          <div class="whats-new-item">
+            <span class="whats-new-icon" aria-hidden="true">&#9888;</span>
+            <div class="whats-new-content">
+              <h3 data-i18n="support.troubleshooting.item3.title">Missing headers shown as warnings</h3>
+              <p data-i18n="support.troubleshooting.item3.desc">Missing security headers are flagged as warnings to help you identify areas for improvement. Not all headers are required for every site.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="version-title">
+        <h2 id="version-title" data-i18n="support.version">Current Version</h2>
+        <div class="info-box">
+          <p><strong>GuardPad v1.0.0</strong></p>
+          <p class="text-muted">Requires iOS 17.0 or later. Compatible with iPhone and iPad.</p>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="contact-title">
+        <h2 id="contact-title" data-i18n="support.contact.title">Still Need Help?</h2>
+        <p data-i18n="support.contact.desc">We're here to help. Send us an email and we'll get back to you.</p>
+
+        <div class="contact-card mt-lg">
+          <h3 data-i18n="support.contact.email">Contact Support</h3>
+          <a href="mailto:op.apps@outlook.com" class="contact-email">op.apps@outlook.com</a>
+          <p class="text-muted mt-lg">We typically respond within 24-48 hours.</p>
+        </div>
+      </section>
+
+      <section class="content-section text-center">
+        <p>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="../">All Apps</a>
+        <a href="support.html" data-i18n="footer.support">Support</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+      </nav>
+      <p class="copyright">&copy; 2026 Olof Petterson. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="../shared/i18n-base.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ProbePad Support - Get help with ProbePad API testing app. FAQ, troubleshooting guides, and contact information.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Support - ProbePad">
+  <meta property="og:description" content="Get help with ProbePad API testing app. FAQ, troubleshooting guides, and contact information.">
+  <meta property="og:type" content="website">
+
+  <!-- Language alternates -->
+  <link rel="alternate" hreflang="en" href="?lang=en">
+  <link rel="alternate" hreflang="de" href="?lang=de">
+  <link rel="alternate" hreflang="es" href="?lang=es">
+  <link rel="alternate" hreflang="ja" href="?lang=ja">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="../shared/styles.css">
+  <style>
+    :root {
+      --color-accent: #00FF66;
+      --color-accent-hover: #33FF85;
+    }
+  </style>
+  <title>Support - ProbePad</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-content">
+      <a href="index.html" class="logo" aria-label="ProbePad Home">
+        <img src="app-icon.png" alt="" class="logo-icon" width="32" height="32">
+        ProbePad
+      </a>
+      <div class="nav-links">
+        <a href="support.html" data-i18n="nav.support">Support</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+      </div>
+      <div class="language-switcher" role="group" aria-label="Language selection">
+        <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+        <button class="lang-btn" data-lang="de" aria-label="Deutsch">DE</button>
+        <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+        <button class="lang-btn" data-lang="ja" aria-label="Japanese">JA</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 data-i18n="support.title">Support</h1>
+      <p data-i18n="support.subtitle">Get help with ProbePad</p>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <main class="page-content">
+    <div class="container container--narrow">
+
+      <!-- FAQ Section -->
+      <section class="content-section" aria-labelledby="faq-title">
+        <h2 id="faq-title" data-i18n="support.faq.title">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q1">How do I create my first API request?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a1">Tap the + button on the main screen, enter your API URL, select the HTTP method, and tap Execute. Your response will appear below.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q2">How do I import from Postman?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a2">Export your Postman collection as JSON v2.1, then in ProbePad go to Settings > Import > select your file. Your requests and folders will be imported.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q3">Where are my secrets stored?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a3">All secrets are encrypted and stored in the iOS Keychain, protected by your device's Secure Enclave. They never leave your device.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q4">How do I use environment variables?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a4">Create an environment in Settings > Environments, add your variables (e.g., {{baseUrl}}), then use them in your requests. Switch environments from the top bar.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q5">What's included in PRO?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a5">PRO unlocks unlimited requests, collections, environments, response history, and removes all limits. One-time purchase works across all your devices.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q6">Does ProbePad sync across devices?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a6">Yes! Enable iCloud Sync in Settings to keep your requests, collections, and environments synchronized across all your Apple devices.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Troubleshooting Section -->
+      <section class="content-section" aria-labelledby="troubleshooting-title">
+        <h2 id="troubleshooting-title" data-i18n="support.troubleshooting.title">Troubleshooting</h2>
+
+        <div class="whats-new-list">
+          <div class="whats-new-item">
+            <span class="whats-new-icon" aria-hidden="true">&#9203;</span>
+            <div class="whats-new-content">
+              <h3 data-i18n="support.troubleshooting.item1.title">Request times out</h3>
+              <p data-i18n="support.troubleshooting.item1.desc">Check your internet connection and verify the API endpoint is correct. Some APIs may have rate limiting.</p>
+            </div>
+          </div>
+
+          <div class="whats-new-item">
+            <span class="whats-new-icon" aria-hidden="true">&#128274;</span>
+            <div class="whats-new-content">
+              <h3 data-i18n="support.troubleshooting.item2.title">Can't access Secrets Vault</h3>
+              <p data-i18n="support.troubleshooting.item2.desc">Ensure Face ID / Touch ID is enabled in your device settings. You can also use your device passcode as fallback.</p>
+            </div>
+          </div>
+
+          <div class="whats-new-item">
+            <span class="whats-new-icon" aria-hidden="true">&#128229;</span>
+            <div class="whats-new-content">
+              <h3 data-i18n="support.troubleshooting.item3.title">Import failed</h3>
+              <p data-i18n="support.troubleshooting.item3.desc">Make sure your Postman export is in Collection v2.1 format. Other formats are not currently supported.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Version Info -->
+      <section class="content-section" aria-labelledby="version-title">
+        <h2 id="version-title" data-i18n="support.version">Current Version</h2>
+        <div class="info-box">
+          <p><strong>ProbePad v1.2.0</strong></p>
+          <p class="text-muted">Requires iOS 17.0 or later. Compatible with iPhone and iPad.</p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="content-section" aria-labelledby="contact-title">
+        <h2 id="contact-title" data-i18n="support.contact.title">Still Need Help?</h2>
+        <p data-i18n="support.contact.desc">We're here to help. Send us an email and we'll get back to you.</p>
+
+        <div class="contact-card mt-lg">
+          <h3 data-i18n="support.contact.email">Contact Support</h3>
+          <a href="mailto:op.apps@outlook.com" class="contact-email">op.apps@outlook.com</a>
+          <p class="text-muted mt-lg">We typically respond within 24-48 hours.</p>
+        </div>
+      </section>
+
+      <!-- Links -->
+      <section class="content-section text-center">
+        <p>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="../">All Apps</a>
+        <a href="support.html" data-i18n="footer.support">Support</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+      </nav>
+      <p class="copyright">&copy; 2026 Olof Petterson. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="../shared/i18n-base.js"></script>
+</body>
+</html>
