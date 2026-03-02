@@ -36,14 +36,14 @@ const translations = {
 
     // What's New
     "whatsnew.title": "What's New",
-    "whatsnew.item1.title": "Cleaner Interface",
-    "whatsnew.item1.desc": "Subtle borders and collapsible sections reduce visual noise.",
-    "whatsnew.item2.title": "Sticky Execute Button",
-    "whatsnew.item2.desc": "Always visible while scrolling through long requests.",
-    "whatsnew.item3.title": "Request List Improvements",
-    "whatsnew.item3.desc": "See URL host, status codes, and relative timestamps at a glance.",
-    "whatsnew.item4.title": "New Localizations",
-    "whatsnew.item4.desc": "Now available in German, Spanish, and Japanese.",
+    "whatsnew.item1.title": "Search & Quick-Switch",
+    "whatsnew.item1.desc": "Find requests instantly by name or URL. Switch environments from the toolbar without leaving your workflow.",
+    "whatsnew.item2.title": "Inline Response Tabs",
+    "whatsnew.item2.desc": "View responses right in the editor with a tabbed interface. No more dismissing modals - re-execute and see results in place.",
+    "whatsnew.item3.title": "cURL Import & Sample Requests",
+    "whatsnew.item3.desc": "Create new requests from cURL commands. First-time users get pre-loaded examples to start testing immediately.",
+    "whatsnew.item4.title": "iPad Keyboard Shortcuts",
+    "whatsnew.item4.desc": "Full keyboard workflow with Cmd+K search, Cmd+E environment switch, Cmd+Return execute, and more.",
 
     // Download
     "download.title": "Ready to Get Started?",
@@ -148,14 +148,14 @@ const translations = {
 
     // What's New
     "whatsnew.title": "Was ist neu",
-    "whatsnew.item1.title": "Klareres Interface",
-    "whatsnew.item1.desc": "Subtile Rahmen und einklappbare Sektionen reduzieren visuelle Unruhe.",
-    "whatsnew.item2.title": "Sticky Ausf\u00FChren-Button",
-    "whatsnew.item2.desc": "Immer sichtbar beim Scrollen durch lange Anfragen.",
-    "whatsnew.item3.title": "Verbesserte Anfragenliste",
-    "whatsnew.item3.desc": "URL-Host, Statuscodes und relative Zeitstempel auf einen Blick.",
-    "whatsnew.item4.title": "Neue Lokalisierungen",
-    "whatsnew.item4.desc": "Jetzt verf\u00FCgbar in Deutsch, Spanisch und Japanisch.",
+    "whatsnew.item1.title": "Suche & Schnellwechsel",
+    "whatsnew.item1.desc": "Finde Anfragen sofort nach Name oder URL. Wechsle Umgebungen direkt aus der Toolbar, ohne deinen Workflow zu unterbrechen.",
+    "whatsnew.item2.title": "Inline-Antwort-Tabs",
+    "whatsnew.item2.desc": "Sieh Antworten direkt im Editor mit einer Tab-Oberfläche. Kein Schließen von Modals mehr - führe erneut aus und sieh Ergebnisse direkt.",
+    "whatsnew.item3.title": "cURL-Import & Beispielanfragen",
+    "whatsnew.item3.desc": "Erstelle neue Anfragen aus cURL-Befehlen. Erstnutzer erhalten vorgeladene Beispiele, um sofort mit dem Testen zu beginnen.",
+    "whatsnew.item4.title": "iPad-Tastaturkürzel",
+    "whatsnew.item4.desc": "Vollständiger Tastatur-Workflow mit Cmd+K Suche, Cmd+E Umgebungswechsel, Cmd+Return Ausführen und mehr.",
 
     // Download
     "download.title": "Bereit loszulegen?",
@@ -260,14 +260,14 @@ const translations = {
 
     // What's New
     "whatsnew.title": "Novedades",
-    "whatsnew.item1.title": "Interfaz m\u00E1s Limpia",
-    "whatsnew.item1.desc": "Bordes sutiles y secciones colapsables reducen el ruido visual.",
-    "whatsnew.item2.title": "Bot\u00F3n Ejecutar Fijo",
-    "whatsnew.item2.desc": "Siempre visible mientras te desplazas por peticiones largas.",
-    "whatsnew.item3.title": "Mejoras en Lista de Peticiones",
-    "whatsnew.item3.desc": "Ve host de URL, c\u00F3digos de estado y marcas de tiempo relativas de un vistazo.",
-    "whatsnew.item4.title": "Nuevas Localizaciones",
-    "whatsnew.item4.desc": "Ahora disponible en alem\u00E1n, espa\u00F1ol y japon\u00E9s.",
+    "whatsnew.item1.title": "Búsqueda y Cambio Rápido",
+    "whatsnew.item1.desc": "Encuentra peticiones al instante por nombre o URL. Cambia de entorno desde la barra de herramientas sin interrumpir tu flujo de trabajo.",
+    "whatsnew.item2.title": "Pestañas de Respuesta Integradas",
+    "whatsnew.item2.desc": "Ve las respuestas directamente en el editor con una interfaz de pestañas. Sin cerrar modales - re-ejecuta y ve resultados en su lugar.",
+    "whatsnew.item3.title": "Importar cURL y Peticiones de Ejemplo",
+    "whatsnew.item3.desc": "Crea nuevas peticiones desde comandos cURL. Los nuevos usuarios obtienen ejemplos precargados para empezar a probar de inmediato.",
+    "whatsnew.item4.title": "Atajos de Teclado en iPad",
+    "whatsnew.item4.desc": "Flujo de trabajo completo con teclado: Cmd+K búsqueda, Cmd+E cambiar entorno, Cmd+Return ejecutar, y más.",
 
     // Download
     "download.title": "\u00BFListo para Empezar?",
@@ -371,15 +371,15 @@ const translations = {
     "screenshots.placeholder": "\u30B9\u30AF\u30EA\u30FC\u30F3\u30B7\u30E7\u30C3\u30C8",
 
     // What's New
-    "whatsnew.title": "\u65B0\u6A5F\u80FD",
-    "whatsnew.item1.title": "\u3088\u308A\u30AF\u30EA\u30FC\u30F3\u306A\u30A4\u30F3\u30BF\u30FC\u30D5\u30A7\u30FC\u30B9",
-    "whatsnew.item1.desc": "\u5FAE\u5999\u306A\u30DC\u30FC\u30C0\u30FC\u3068\u6298\u308A\u305F\u305F\u307F\u53EF\u80FD\u306A\u30BB\u30AF\u30B7\u30E7\u30F3\u3067\u8996\u899A\u7684\u306A\u30CE\u30A4\u30BA\u3092\u8EFD\u6E1B\u3002",
-    "whatsnew.item2.title": "\u56FA\u5B9A\u5B9F\u884C\u30DC\u30BF\u30F3",
-    "whatsnew.item2.desc": "\u9577\u3044\u30EA\u30AF\u30A8\u30B9\u30C8\u3092\u30B9\u30AF\u30ED\u30FC\u30EB\u3057\u3066\u3082\u5E38\u306B\u8868\u793A\u3002",
-    "whatsnew.item3.title": "\u30EA\u30AF\u30A8\u30B9\u30C8\u30EA\u30B9\u30C8\u306E\u6539\u5584",
-    "whatsnew.item3.desc": "URL\u30DB\u30B9\u30C8\u3001\u30B9\u30C6\u30FC\u30BF\u30B9\u30B3\u30FC\u30C9\u3001\u76F8\u5BFE\u30BF\u30A4\u30E0\u30B9\u30BF\u30F3\u30D7\u3092\u4E00\u76EE\u3067\u78BA\u8A8D\u3002",
-    "whatsnew.item4.title": "\u65B0\u3057\u3044\u30ED\u30FC\u30AB\u30E9\u30A4\u30BC\u30FC\u30B7\u30E7\u30F3",
-    "whatsnew.item4.desc": "\u30C9\u30A4\u30C4\u8A9E\u3001\u30B9\u30DA\u30A4\u30F3\u8A9E\u3001\u65E5\u672C\u8A9E\u3067\u5229\u7528\u53EF\u80FD\u306B\u3002",
+    "whatsnew.title": "新機能",
+    "whatsnew.item1.title": "検索＆クイック切替",
+    "whatsnew.item1.desc": "名前やURLでリクエストを即座に検索。ツールバーからワークフローを中断せずに環境を切り替え。",
+    "whatsnew.item2.title": "インラインレスポンスタブ",
+    "whatsnew.item2.desc": "タブインターフェースでエディター内でレスポンスを表示。モーダルを閉じる必要なし - 再実行して結果をその場で確認。",
+    "whatsnew.item3.title": "cURLインポート＆サンプルリクエスト",
+    "whatsnew.item3.desc": "cURLコマンドから新しいリクエストを作成。初めてのユーザーにはすぐにテストを開始できるプリロードされた例が付属。",
+    "whatsnew.item4.title": "iPadキーボードショートカット",
+    "whatsnew.item4.desc": "Cmd+K検索、Cmd+E環境切替、Cmd+Return実行など、完全なキーボードワークフロー。",
 
     // Download
     "download.title": "\u59CB\u3081\u308B\u6E96\u5099\u306F\u3067\u304D\u307E\u3057\u305F\u304B\uFF1F",
