@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechnoBuddy - Real-time BPM detector & audio analyzer for DJs. Spectrum visualizer, tap tempo, booth mode, and genre presets.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TechnoBuddy - Real-Time BPM Detector for DJs">
+  <meta property="og:description" content="Detect BPM in real-time, visualize frequency spectrum, and tap tempo - all with a retro CRT aesthetic.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://olofpetterson.github.io/op-apps/technobuddy/">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TechnoBuddy - Real-Time BPM Detector for DJs">
+  <meta name="twitter:description" content="Detect BPM in real-time with a retro CRT aesthetic.">
+
+  <!-- Language alternates -->
+  <link rel="alternate" hreflang="en" href="?lang=en">
+  <link rel="alternate" hreflang="de" href="?lang=de">
+  <link rel="alternate" hreflang="es" href="?lang=es">
+  <link rel="alternate" hreflang="ja" href="?lang=ja">
+
+  <link rel="stylesheet" href="../shared/styles.css">
+  <style>
+    :root {
+      --color-accent: #00FF41;
+      --color-accent-hover: #33FF6B;
+    }
+    .app-icon {
+      box-shadow: 0 20px 60px rgba(0, 255, 65, 0.2);
+    }
+  </style>
+  <title>TechnoBuddy - Real-Time BPM Detector for DJs</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-content">
+      <a href="index.html" class="logo" aria-label="TechnoBuddy Home">
+        TechnoBuddy
+      </a>
+      <div class="nav-links">
+        <a href="support.html" data-i18n="nav.support">Support</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+      </div>
+      <div class="language-switcher" role="group" aria-label="Language selection">
+        <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+        <button class="lang-btn" data-lang="de" aria-label="Deutsch">DE</button>
+        <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+        <button class="lang-btn" data-lang="ja" aria-label="Japanese">JA</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <h1 id="hero-title" data-i18n="hero.title">Real-Time BPM Detector for DJs</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">TechnoBuddy listens to the music around you and detects BPM in real-time. Frequency spectrum, tap tempo, booth mode - all wrapped in a retro CRT aesthetic.</p>
+      <div class="hero-badges">
+        <span class="badge" data-i18n="hero.badge.realtime">Real-Time Analysis</span>
+        <span class="badge" data-i18n="hero.badge.genres">Genre Presets</span>
+        <span class="badge" data-i18n="hero.badge.booth">Booth Mode</span>
+      </div>
+      <a href="#download" class="cta-button" data-i18n="hero.cta">
+        Download on App Store
+      </a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" aria-labelledby="features-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="features-title" data-i18n="features.title">Built for the Booth</h2>
+        <p data-i18n="features.subtitle">Professional audio analysis tools with a retro soul.</p>
+      </div>
+      <div class="features-grid">
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#127926;</span>
+          <h3 data-i18n="features.bpm.title">BPM Detection</h3>
+          <p data-i18n="features.bpm.desc">Accurate real-time tempo detection using onset analysis and Gaussian priors. Locks on fast and stays steady.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#127912;</span>
+          <h3 data-i18n="features.spectrum.title">Spectrum Visualizer</h3>
+          <p data-i18n="features.spectrum.desc">FFT-powered frequency spectrum with adjustable smoothing. See the music in real-time.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128308;</span>
+          <h3 data-i18n="features.booth.title">Booth Mode</h3>
+          <p data-i18n="features.booth.desc">Red low-light mode designed for dark DJ booths. Easy on the eyes, easy to read.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128270;</span>
+          <h3 data-i18n="features.genres.title">Genre Presets</h3>
+          <p data-i18n="features.genres.desc">Techno, House, DnB, Ambient - each with tuned detection ranges for maximum accuracy.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128400;</span>
+          <h3 data-i18n="features.tap.title">Tap Tempo</h3>
+          <p data-i18n="features.tap.desc">Tap along to the beat for manual BPM confirmation. Works alongside auto-detection.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128243;</span>
+          <h3 data-i18n="features.haptic.title">Haptic Beat</h3>
+          <p data-i18n="features.haptic.desc">Feel the detected beat through haptic feedback. Stay in sync without looking at the screen.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="download" id="download" aria-labelledby="download-title">
+    <div class="container">
+      <h2 id="download-title" data-i18n="download.title">Ready to Drop?</h2>
+      <p data-i18n="download.subtitle">Download TechnoBuddy and find your tempo.</p>
+      <a href="#" class="cta-button" target="_blank" rel="noopener" aria-label="Download TechnoBuddy on the App Store">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+        </svg>
+        <span data-i18n="hero.cta">Download on App Store</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="../">All Apps</a>
+        <a href="support.html" data-i18n="footer.support">Support</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+      </nav>
+      <p class="copyright" data-i18n="footer.copyright">&copy; 2026 Olof Petterson. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="../shared/i18n-base.js"></script>
+  <script data-goatcounter="https://op-apps.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
