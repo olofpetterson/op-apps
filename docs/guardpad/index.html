@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="GuardPad - HTTP Security Scanner for iPhone & iPad. Get your security grade in 3 seconds. Analyze headers, SSL/TLS, CORS, and DNS.">
+  <meta name="description" content="GuardPad - HTTP Security Scanner for iPhone & iPad. Get your security grade in 3 seconds. Analyze 11 security headers, cookies, SSL/TLS, CORS, and DNS.">
 
   <!-- Open Graph -->
   <meta property="og:title" content="GuardPad - HTTP Security Scanner">
-  <meta property="og:description" content="Get your security grade in 3 seconds. Analyze HTTP headers, SSL/TLS certificates, CORS policies, and DNS records.">
+  <meta property="og:description" content="Get your security grade in 3 seconds. Analyze 11 security headers, cookie security, SSL/TLS certificates, CORS policies, and DNS records.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://olofpetterson.github.io/op-apps/guardpad/">
   <!-- Twitter Card -->
@@ -63,7 +63,8 @@
       <p class="hero-subtitle" data-i18n="hero.subtitle">GuardPad is a powerful HTTP security scanner. Analyze security headers, SSL/TLS certificates, CORS policies, and DNS records - all from your pocket.</p>
       <div class="hero-badges">
         <span class="badge" data-i18n="hero.badge.instant">Instant Analysis</span>
-        <span class="badge" data-i18n="hero.badge.headers">8 Security Headers</span>
+        <span class="badge" data-i18n="hero.badge.headers">11 Security Headers</span>
+        <span class="badge" data-i18n="hero.badge.cookies">Cookie Analysis</span>
         <span class="badge" data-i18n="hero.badge.export">Export Reports</span>
       </div>
       <a href="https://apps.apple.com/us/app/guardpad/id6759147267" class="cta-button" data-i18n="hero.cta" target="_blank" rel="noopener">
@@ -83,12 +84,17 @@
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128279;</span>
           <h3 data-i18n="features.scan.title">URL Scan</h3>
-          <p data-i18n="features.scan.desc">Enter any URL and get a complete security analysis in seconds.</p>
+          <p data-i18n="features.scan.desc">Enter any URL and get a complete security analysis in seconds. Redirect chains are graded for quality.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128737;</span>
           <h3 data-i18n="features.headers.title">Security Headers</h3>
-          <p data-i18n="features.headers.desc">Analyze 8 critical headers: CSP, HSTS, X-Frame-Options, and more.</p>
+          <p data-i18n="features.headers.desc">Analyze 11 security headers: CSP depth scoring, HSTS, COOP, COEP, CORP, and more.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#127850;</span>
+          <h3 data-i18n="features.cookies.title">Cookie Analysis</h3>
+          <p data-i18n="features.cookies.desc">Grade cookie security: Secure, HttpOnly, SameSite, __Host- prefix, and session hygiene.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128274;</span>
@@ -106,6 +112,11 @@
           <p data-i18n="features.dns.desc">Query A, AAAA, MX, TXT, and other DNS record types.</p>
         </article>
         <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#9889;</span>
+          <h3 data-i18n="features.quickfix.title">Quick Fix</h3>
+          <p data-i18n="features.quickfix.desc">Impact-sorted issues with server-specific code snippets. Fix your grade, fast.</p>
+        </article>
+        <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128203;</span>
           <h3 data-i18n="features.export.title">Export Reports</h3>
           <p data-i18n="features.export.desc">Share security reports as PDF or JSON for documentation.</p>
@@ -121,9 +132,58 @@
         <h2 id="screenshots-title" data-i18n="screenshots.title">See It in Action</h2>
       </div>
       <div class="screenshots-carousel" role="region" aria-label="App screenshots">
-        <div class="screenshot-placeholder" data-i18n="screenshots.placeholder">Screenshots coming soon</div>
-        <div class="screenshot-placeholder" data-i18n="screenshots.placeholder">Screenshots coming soon</div>
-        <div class="screenshot-placeholder" data-i18n="screenshots.placeholder">Screenshots coming soon</div>
+        <img src="screenshot-1.png" alt="GuardPad scan results with security grade" class="screenshot" loading="lazy">
+        <img src="screenshot-2.png" alt="GuardPad detailed header analysis" class="screenshot" loading="lazy">
+        <img src="screenshot-3.png" alt="GuardPad domain-grouped scan history" class="screenshot" loading="lazy">
+        <img src="screenshot-4.png" alt="GuardPad batch URL scanning" class="screenshot" loading="lazy">
+        <img src="screenshot-5.png" alt="GuardPad PRO features" class="screenshot" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- What's New Section -->
+  <section class="whats-new" aria-labelledby="whatsnew-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="version-tag">v1.2</span>
+        <h2 id="whatsnew-title" data-i18n="whatsnew.title">What's New</h2>
+      </div>
+      <div class="whats-new-list">
+        <div class="whats-new-item">
+          <span class="whats-new-icon" aria-hidden="true">&#127850;</span>
+          <div class="whats-new-content">
+            <h3 data-i18n="whatsnew.item1.title">Cookie Security Analysis</h3>
+            <p data-i18n="whatsnew.item1.desc">Grade cookie security attributes: Secure, HttpOnly, SameSite, __Host- prefix. Session and CSRF heuristics with HSTS-aware mitigation scoring.</p>
+          </div>
+        </div>
+        <div class="whats-new-item">
+          <span class="whats-new-icon" aria-hidden="true">&#128737;</span>
+          <div class="whats-new-content">
+            <h3 data-i18n="whatsnew.item2.title">Deeper Header Analysis</h3>
+            <p data-i18n="whatsnew.item2.desc">11 graded headers with CSP depth scoring (nonce/strict-dynamic detection), COOP/COEP/CORP grading, and deprecated header detection.</p>
+          </div>
+        </div>
+        <div class="whats-new-item">
+          <span class="whats-new-icon" aria-hidden="true">&#9889;</span>
+          <div class="whats-new-content">
+            <h3 data-i18n="whatsnew.item3.title">Quick Fix Mode</h3>
+            <p data-i18n="whatsnew.item3.desc">Floating pill with impact-sorted issues and server-specific code snippets. Fix the most impactful problems first.</p>
+          </div>
+        </div>
+        <div class="whats-new-item">
+          <span class="whats-new-icon" aria-hidden="true">&#128269;</span>
+          <div class="whats-new-content">
+            <h3 data-i18n="whatsnew.item4.title">Redirect &amp; security.txt</h3>
+            <p data-i18n="whatsnew.item4.desc">Redirect chain grading (hop count + HTTP detection). RFC 9116 security.txt status checking.</p>
+          </div>
+        </div>
+        <div class="whats-new-item">
+          <span class="whats-new-icon" aria-hidden="true">&#128202;</span>
+          <div class="whats-new-content">
+            <h3 data-i18n="whatsnew.item5.title">Redesigned Results</h3>
+            <p data-i18n="whatsnew.item5.desc">Collapsible section groups with report card strip. Domain-grouped history with per-domain drill-down and compare mode.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -141,10 +201,12 @@
         <p class="pro-price-note" data-i18n="pro.onetimepurchase">One-time purchase</p>
         <ul class="pro-features">
           <li data-i18n="pro.feature1">Unlimited scans</li>
-          <li data-i18n="pro.feature2">Scan history</li>
-          <li data-i18n="pro.feature3">PDF & JSON export</li>
-          <li data-i18n="pro.feature4">Advanced DNS queries</li>
-          <li data-i18n="pro.feature5">iCloud sync</li>
+          <li data-i18n="pro.feature2">Batch URL scanning</li>
+          <li data-i18n="pro.feature3">Scan history &amp; domain grouping</li>
+          <li data-i18n="pro.feature4">iPad compare mode</li>
+          <li data-i18n="pro.feature5">Quick Fix code snippets</li>
+          <li data-i18n="pro.feature6">PDF &amp; JSON export</li>
+          <li data-i18n="pro.feature7">Advanced DNS queries</li>
         </ul>
         <a href="https://apps.apple.com/us/app/guardpad/id6759147267" class="cta-button" data-i18n="hero.cta" target="_blank" rel="noopener">Download on App Store</a>
       </div>

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DeltaPad - 10 Essential Developer Tools for iPhone & iPad. JSON Formatter, Base64, UUID, Timestamp, JWT Decoder, Regex Tester, and more.">
+  <meta name="description" content="DeltaPad - 20 Essential Developer Tools for iPhone & iPad. JSON Formatter, Base64, JWT Decoder, Regex Tester, Markdown Preview, Password Generator, and more.">
 
-  <meta property="og:title" content="DeltaPad - 10 Essential Dev Tools">
-  <meta property="og:description" content="JSON Formatter, Base64, UUID Generator, Timestamp Converter, JWT Decoder, Regex Tester, Hash Generator, and more - all in one app.">
+  <meta property="og:title" content="DeltaPad - 20 Dev Tools. One App.">
+  <meta property="og:description" content="JSON Formatter, Base64, UUID Generator, JWT Decoder, Regex Tester, Markdown Preview, Password Generator, YAML Converter, and more - all in one app.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://olofpetterson.github.io/op-apps/deltapad/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="DeltaPad - 10 Essential Dev Tools">
+  <meta name="twitter:title" content="DeltaPad - 20 Dev Tools. One App.">
   <meta name="twitter:description" content="Essential developer tools in your pocket.">
 
   <link rel="alternate" hreflang="en" href="?lang=en">
@@ -29,7 +29,7 @@
       box-shadow: 0 20px 60px rgba(0, 191, 255, 0.2);
     }
   </style>
-  <title>DeltaPad - 10 Essential Dev Tools</title>
+  <title>DeltaPad - 20 Dev Tools. One App.</title>
 </head>
 <body>
   <nav class="navbar" role="navigation" aria-label="Main navigation">
@@ -54,10 +54,11 @@
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-content">
       <div class="app-icon" style="width: 120px; height: 120px; background: linear-gradient(135deg, #00BFFF 0%, #0080FF 100%); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; margin: 0 auto var(--spacing-lg);">&#128295;</div>
-      <h1 id="hero-title" data-i18n="hero.title">10 Essential Dev Tools</h1>
-      <p class="hero-subtitle" data-i18n="hero.subtitle">DeltaPad puts essential developer utilities in your pocket. Format JSON, encode Base64, generate UUIDs, decode JWTs, test regex, and more - all offline.</p>
+      <h1 id="hero-title" data-i18n="hero.title">20 Dev Tools. One App.</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">DeltaPad puts 20 essential developer utilities in your pocket. Format JSON, decode JWTs, test regex, preview Markdown, generate passwords, convert YAML, and more - all offline.</p>
       <div class="hero-badges">
-        <span class="badge" data-i18n="hero.badge.tools">10 Tools</span>
+        <span class="badge" data-i18n="hero.badge.tools">20 Tools</span>
+        <span class="badge" data-i18n="hero.badge.free">11 Free</span>
         <span class="badge" data-i18n="hero.badge.offline">Works Offline</span>
         <span class="badge" data-i18n="hero.badge.fast">Lightning Fast</span>
       </div>
@@ -77,52 +78,62 @@
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#123;&#125;</span>
           <h3 data-i18n="features.json.title">JSON Formatter</h3>
-          <p data-i18n="features.json.desc">Format, minify, and validate JSON with syntax highlighting.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128290;</span>
-          <h3 data-i18n="features.base64.title">Base64 Encoder</h3>
-          <p data-i18n="features.base64.desc">Encode and decode Base64 strings and files instantly.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128279;</span>
-          <h3 data-i18n="features.url.title">URL Encoder</h3>
-          <p data-i18n="features.url.desc">Encode and decode URLs for safe transmission.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128273;</span>
-          <h3 data-i18n="features.uuid.title">UUID Generator</h3>
-          <p data-i18n="features.uuid.desc">Generate v4 UUIDs with one tap. Copy or share instantly.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128336;</span>
-          <h3 data-i18n="features.timestamp.title">Timestamp Converter</h3>
-          <p data-i18n="features.timestamp.desc">Convert between Unix timestamps and human-readable dates.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128274;</span>
-          <h3 data-i18n="features.jwt.title">JWT Decoder</h3>
-          <p data-i18n="features.jwt.desc">Decode and inspect JWT tokens. View header, payload, and signature.</p>
+          <p data-i18n="features.json.desc">Format, minify, and validate JSON with syntax highlighting and tree view.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128269;</span>
           <h3 data-i18n="features.regex.title">Regex Tester</h3>
-          <p data-i18n="features.regex.desc">Test regular expressions with real-time matching and groups.</p>
+          <p data-i18n="features.regex.desc">Test regular expressions with real-time match highlighting and capture groups.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128274;</span>
+          <h3 data-i18n="features.jwt.title">JWT Decoder</h3>
+          <p data-i18n="features.jwt.desc">Decode and inspect JWT tokens with color-coded sections and expiry countdown.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128221;</span>
+          <h3 data-i18n="features.markdown.title">Markdown Preview</h3>
+          <p data-i18n="features.markdown.desc">Live edit/preview/split mode with GitHub Flavored Markdown and HTML export.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128272;</span>
-          <h3 data-i18n="features.hash.title">Hash Generator</h3>
-          <p data-i18n="features.hash.desc">Generate MD5, SHA-1, SHA-256, and SHA-512 hashes.</p>
+          <h3 data-i18n="features.password.title">Password Generator</h3>
+          <p data-i18n="features.password.desc">Cryptographically secure passwords with presets, entropy display, and history.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#127912;</span>
           <h3 data-i18n="features.color.title">Color Converter</h3>
-          <p data-i18n="features.color.desc">Convert between HEX, RGB, HSL, and preview colors.</p>
+          <p data-i18n="features.color.desc">Convert between HEX, RGB, HSL with SwiftUI/UIKit/CSS code output.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128203;</span>
-          <h3 data-i18n="features.diff.title">Text Diff</h3>
-          <p data-i18n="features.diff.desc">Compare two texts and see differences highlighted.</p>
+          <h3 data-i18n="features.diff.title">Diff Viewer</h3>
+          <p data-i18n="features.diff.desc">Compare texts with line-level and character-level difference highlighting.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128260;</span>
+          <h3 data-i18n="features.yaml.title">YAML Converter</h3>
+          <p data-i18n="features.yaml.desc">Bidirectional YAML ↔ JSON conversion with auto-detect and coercion warnings.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128290;</span>
+          <h3 data-i18n="features.base64.title">Base64 Encoder</h3>
+          <p data-i18n="features.base64.desc">Encode and decode Base64 with URL-safe variant and auto-detect.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128273;</span>
+          <h3 data-i18n="features.uuid.title">UUID Generator</h3>
+          <p data-i18n="features.uuid.desc">Generate v4 UUIDs with one tap. Bulk mode and format options.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128272;</span>
+          <h3 data-i18n="features.hash.title">Hash &amp; HMAC</h3>
+          <p data-i18n="features.hash.desc">MD5, SHA-1, SHA-256, SHA-512 hashes and HMAC with key encoding options.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128295;</span>
+          <h3 data-i18n="features.more.title">+8 More Tools</h3>
+          <p data-i18n="features.more.desc">URL Encoder, Timestamp Converter, Text Case, Number Base, Lorem Ipsum, String Escape, Byte Counter, Unix Permissions.</p>
         </article>
       </div>
     </div>
@@ -134,9 +145,59 @@
         <h2 id="screenshots-title" data-i18n="screenshots.title">See It in Action</h2>
       </div>
       <div class="screenshots-carousel" role="region" aria-label="App screenshots">
-        <div class="screenshot-placeholder" data-i18n="screenshots.placeholder">Screenshots coming soon</div>
-        <div class="screenshot-placeholder" data-i18n="screenshots.placeholder">Screenshots coming soon</div>
-        <div class="screenshot-placeholder" data-i18n="screenshots.placeholder">Screenshots coming soon</div>
+        <img src="screenshot-1.png" alt="DeltaPad LaunchPad with 20 developer tools" class="screenshot" loading="lazy">
+        <img src="screenshot-2.png" alt="DeltaPad JSON Formatter with syntax highlighting" class="screenshot" loading="lazy">
+        <img src="screenshot-3.png" alt="DeltaPad Color Converter with live preview" class="screenshot" loading="lazy">
+        <img src="screenshot-4.png" alt="DeltaPad Regex Tester with match highlighting" class="screenshot" loading="lazy">
+        <img src="screenshot-5.png" alt="DeltaPad Password Generator" class="screenshot" loading="lazy">
+        <img src="screenshot-6.png" alt="DeltaPad Markdown Preview" class="screenshot" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- What's New Section -->
+  <section class="whats-new" aria-labelledby="whatsnew-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="version-tag">v2.0</span>
+        <h2 id="whatsnew-title" data-i18n="whatsnew.title">What's New</h2>
+      </div>
+      <div class="whats-new-list">
+        <div class="whats-new-item">
+          <span class="whats-new-icon" aria-hidden="true">&#128295;</span>
+          <div class="whats-new-content">
+            <h3 data-i18n="whatsnew.item1.title">10 New Tools</h3>
+            <p data-i18n="whatsnew.item1.desc">Text Case Converter, Number Base Converter, Lorem Ipsum Generator, String Escape/Unescape, Byte Counter, Unix Permissions, YAML Converter, Password Generator, HMAC Generator, and Markdown Preview.</p>
+          </div>
+        </div>
+        <div class="whats-new-item">
+          <span class="whats-new-icon" aria-hidden="true">&#128221;</span>
+          <div class="whats-new-content">
+            <h3 data-i18n="whatsnew.item2.title">Markdown Preview</h3>
+            <p data-i18n="whatsnew.item2.desc">Live edit/preview/split mode with GitHub Flavored Markdown support. Copy rendered HTML or export as image.</p>
+          </div>
+        </div>
+        <div class="whats-new-item">
+          <span class="whats-new-icon" aria-hidden="true">&#128272;</span>
+          <div class="whats-new-content">
+            <h3 data-i18n="whatsnew.item3.title">Password Generator</h3>
+            <p data-i18n="whatsnew.item3.desc">Cryptographically secure passwords using SecRandomCopyBytes. Presets, entropy display, and generation history.</p>
+          </div>
+        </div>
+        <div class="whats-new-item">
+          <span class="whats-new-icon" aria-hidden="true">&#128260;</span>
+          <div class="whats-new-content">
+            <h3 data-i18n="whatsnew.item4.title">YAML ↔ JSON</h3>
+            <p data-i18n="whatsnew.item4.desc">Bidirectional conversion with auto-detect input format. Boolean coercion warnings for YAML edge cases.</p>
+          </div>
+        </div>
+        <div class="whats-new-item">
+          <span class="whats-new-icon" aria-hidden="true">&#128161;</span>
+          <div class="whats-new-content">
+            <h3 data-i18n="whatsnew.item5.title">Smarter Clipboard</h3>
+            <p data-i18n="whatsnew.item5.desc">Clipboard intelligence now detects permissions, environment variables, Markdown, and YAML — routing you to the right tool instantly.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -152,11 +213,11 @@
         <p class="pro-price">$4.99</p>
         <p class="pro-price-note" data-i18n="pro.onetimepurchase">One-time purchase</p>
         <ul class="pro-features">
-          <li data-i18n="pro.feature1">All 10 tools unlocked</li>
-          <li data-i18n="pro.feature2">History for all tools</li>
-          <li data-i18n="pro.feature3">Share and export results</li>
-          <li data-i18n="pro.feature4">Custom presets</li>
-          <li data-i18n="pro.feature5">iCloud sync</li>
+          <li data-i18n="pro.feature1">9 PRO tools unlocked</li>
+          <li data-i18n="pro.feature2">JWT, Regex, Diff, Color, YAML</li>
+          <li data-i18n="pro.feature3">Password &amp; HMAC generators</li>
+          <li data-i18n="pro.feature4">Markdown Preview with export</li>
+          <li data-i18n="pro.feature5">Hash Generator (4 algorithms)</li>
         </ul>
         <a href="https://apps.apple.com/us/app/deltapad/id6759147374" class="cta-button" data-i18n="hero.cta" target="_blank" rel="noopener">Download on App Store</a>
       </div>
