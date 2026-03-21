@@ -1,7 +1,7 @@
 /* OP Apps - Shared Design System Styles */
 
-/* Fonts: Syne (display/headings) + JetBrains Mono (code/badges) */
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+/* Fonts: JetBrains Mono (code/badges) */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
   /* Backgrounds */
@@ -19,7 +19,7 @@
   --color-muted-text:        #666666;
 
   /* Typography */
-  --font-display: 'Syne', -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
   --font-body:    -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
   --font-mono:    'JetBrains Mono', 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
 
