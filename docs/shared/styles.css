@@ -814,6 +814,7 @@ footer {
 .app-card:nth-child(2) { animation: fadeInUp 0.65s 0.14s var(--ease-out-quart) both; }
 .app-card:nth-child(3) { animation: fadeInUp 0.65s 0.23s var(--ease-out-quart) both; }
 .app-card:nth-child(4) { animation: fadeInUp 0.65s 0.32s var(--ease-out-quart) both; }
+.app-card:nth-child(5) { animation: fadeInUp 0.65s 0.41s var(--ease-out-quart) both; }
 
 .app-card:hover {
   transform: translateY(-10px);
