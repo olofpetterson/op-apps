@@ -60,13 +60,13 @@
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-content">
       <div class="app-icon" style="width: 120px; height: 120px; background: linear-gradient(135deg, #FFB000 0%, #FF8C00 100%); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; margin: 0 auto var(--spacing-lg);">&#128737;</div>
-      <h1 id="hero-title" data-i18n="hero.title">Context-Sensitive Security Grade</h1>
-      <p class="hero-subtitle" data-i18n="hero.subtitle">GuardPad adapts your security grade to your site type. A blog isn't judged like a banking app. Analyze headers, SSL/TLS, cookies, email security, and OWASP compliance — all from your pocket.</p>
+      <h1 id="hero-title" data-i18n="hero.title">Native iOS Security Scanner</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Scan from Safari with the Share Extension, ask Siri, glance at your widget. GuardPad analyzes 30+ security dimensions — headers, TLS, DNS, email, WAF — and grades them by site type. New in 2.0: continuous monitoring, PCI DSS 4.0, post-quantum TLS.</p>
       <div class="hero-badges">
-        <span class="badge" data-i18n="hero.badge.instant">Context-Aware Grading</span>
-        <span class="badge" data-i18n="hero.badge.headers">11 Security Headers</span>
-        <span class="badge" data-i18n="hero.badge.email">Email Security</span>
-        <span class="badge" data-i18n="hero.badge.owasp">OWASP Compliance</span>
+        <span class="badge" data-i18n="hero.badge.native">Share · Siri · Widgets</span>
+        <span class="badge" data-i18n="hero.badge.monitoring">Continuous Monitoring</span>
+        <span class="badge" data-i18n="hero.badge.context">Context-Aware Grading</span>
+        <span class="badge" data-i18n="hero.badge.dimensions">30+ Dimensions</span>
       </div>
       <a href="https://apps.apple.com/us/app/guardpad/id6759147267" class="cta-button" data-i18n="hero.cta" target="_blank" rel="noopener">
         Download on App Store
@@ -83,34 +83,39 @@
       </div>
       <div class="features-grid">
         <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128279;</span>
-          <h3 data-i18n="features.scan.title">URL Scan</h3>
-          <p data-i18n="features.scan.desc">Enter any URL and get a context-sensitive security grade in seconds. Your site type is detected automatically.</p>
+          <span class="feature-icon" aria-hidden="true">&#128241;</span>
+          <h3 data-i18n="features.native.title">Native iOS</h3>
+          <p data-i18n="features.native.desc">Share Extension from Safari, Siri Shortcuts, Home and Lock Screen widgets, and a Control Center toggle. TipKit-guided onboarding.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128202;</span>
+          <h3 data-i18n="features.monitoring.title">Continuous Monitoring</h3>
+          <p data-i18n="features.monitoring.desc">Background re-scans, certificate expiry alerts, grade trend charts, and a security posture dashboard. PRO.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128737;</span>
-          <h3 data-i18n="features.headers.title">Security Headers</h3>
-          <p data-i18n="features.headers.desc">Analyze 11 security headers with site-type-aware weighting. CSP depth scoring, HSTS, COOP, COEP, CORP, and more.</p>
+          <h3 data-i18n="features.waf.title">WAF &amp; CDN Fingerprinting</h3>
+          <p data-i18n="features.waf.desc">Identify 14 WAF/CDN providers, discover subdomains, inspect API endpoints, and check PCI DSS 4.0 readiness. PRO.</p>
         </article>
         <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#9993;</span>
-          <h3 data-i18n="features.email.title">Email Security</h3>
-          <p data-i18n="features.email.desc">Grade SPF, DMARC, and DKIM individually. Detect spoofable domains with actionable DNS fix snippets.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#127850;</span>
-          <h3 data-i18n="features.cookies.title">Cookie Analysis</h3>
-          <p data-i18n="features.cookies.desc">Grade cookie security: Secure, HttpOnly, SameSite, __Host- prefix, and session hygiene.</p>
+          <span class="feature-icon" aria-hidden="true">&#128279;</span>
+          <h3 data-i18n="features.scan.title">Context-Sensitive Scan</h3>
+          <p data-i18n="features.scan.desc">Enter any URL and get a context-sensitive security grade in seconds. Your site type is detected automatically.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128274;</span>
-          <h3 data-i18n="features.ssl.title">SSL/TLS Analysis</h3>
-          <p data-i18n="features.ssl.desc">Check certificate validity, expiration, and cipher suite strength.</p>
+          <h3 data-i18n="features.headers.title">Headers &amp; Modern TLS</h3>
+          <p data-i18n="features.headers.desc">11+ security headers with site-type-aware weighting, CSP depth scoring, TLS depth analysis, and post-quantum cipher detection (X25519MLKEM768).</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#9993;</span>
+          <h3 data-i18n="features.email.title">Email Security &amp; MTA-STS</h3>
+          <p data-i18n="features.email.desc">Grade SPF, DMARC, and DKIM individually. MTA-STS, BIMI, and .well-known scanner. Detect spoofable domains with actionable DNS fix snippets.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128203;</span>
-          <h3 data-i18n="features.owasp.title">OWASP Compliance</h3>
-          <p data-i18n="features.owasp.desc">Map every finding to OWASP Top 10:2025 categories. Know which risks you're covered for.</p>
+          <h3 data-i18n="features.owasp.title">OWASP &amp; PCI DSS 4.0</h3>
+          <p data-i18n="features.owasp.desc">Every finding mapped to OWASP Top 10:2025 categories with compliance bars. PCI DSS 4.0 readiness checks (PRO).</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128421;</span>
@@ -133,12 +138,12 @@
         <h2 id="screenshots-title" data-i18n="screenshots.title">See It in Action</h2>
       </div>
       <div class="screenshots-carousel" role="region" aria-label="App screenshots">
-        <img src="screenshot-1.png" alt="GuardPad scan results with context-sensitive C grade and site type badge" class="screenshot" loading="lazy">
-        <img src="screenshot-2.png" alt="GuardPad detailed analysis: cookies, SSL, and email security" class="screenshot" loading="lazy">
-        <img src="screenshot-3.png" alt="GuardPad domain-grouped scan history with grade badges" class="screenshot" loading="lazy">
-        <img src="screenshot-4.png" alt="GuardPad email security: SPF, DMARC, and DKIM grading" class="screenshot" loading="lazy">
-        <img src="screenshot-5.png" alt="GuardPad OWASP Top 10:2025 compliance mapping" class="screenshot" loading="lazy">
-        <img src="screenshot-6.png" alt="GuardPad DNS-only fallback with dashed grade ring for unreachable servers" class="screenshot" loading="lazy">
+        <img src="screenshot-1.png" alt="GuardPad scan results with context-sensitive grade and site type badge" class="screenshot" loading="lazy">
+        <img src="screenshot-2.png" alt="GuardPad security posture dashboard with continuous monitoring" class="screenshot" loading="lazy">
+        <img src="screenshot-3.png" alt="GuardPad grade trend chart over time" class="screenshot" loading="lazy">
+        <img src="screenshot-4.png" alt="GuardPad batch URL scanning across multiple domains" class="screenshot" loading="lazy">
+        <img src="screenshot-5.png" alt="GuardPad Quick Fix with server-specific code snippets" class="screenshot" loading="lazy">
+        <img src="screenshot-6.png" alt="GuardPad CORS tester with preflight and credential checks" class="screenshot" loading="lazy">
       </div>
     </div>
   </section>
@@ -147,50 +152,50 @@
   <section class="whats-new" aria-labelledby="whatsnew-title">
     <div class="container">
       <div class="section-header">
-        <span class="version-tag">v1.3</span>
+        <span class="version-tag">v2.0</span>
         <h2 id="whatsnew-title" data-i18n="whatsnew.title">What's New</h2>
       </div>
       <div class="whats-new-list">
         <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#127919;</span>
+          <span class="whats-new-icon" aria-hidden="true">&#128241;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item1.title">Context-Sensitive Grading</h3>
-            <p data-i18n="whatsnew.item1.desc">Grades now adapt to your site type. A static blog isn't held to the same standard as a banking SPA. Five types detected automatically: static, SPA, API, CMS, and generic.</p>
+            <h3 data-i18n="whatsnew.item1.title">Native iOS Integration</h3>
+            <p data-i18n="whatsnew.item1.desc">Share Extension scans straight from Safari. Siri Shortcuts, Home and Lock Screen widgets, a Control Center toggle, and TipKit-guided onboarding.</p>
           </div>
         </div>
         <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#9993;</span>
+          <span class="whats-new-icon" aria-hidden="true">&#128202;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item2.title">Email Security Analysis</h3>
-            <p data-i18n="whatsnew.item2.desc">SPF, DMARC, and DKIM records graded individually. Detect spoofable domains and get DNS fix snippets.</p>
+            <h3 data-i18n="whatsnew.item2.title">Continuous Monitoring (PRO)</h3>
+            <p data-i18n="whatsnew.item2.desc">Background re-scans, certificate expiry alerts, grade trend charts, and a security posture dashboard that tracks your portfolio over time.</p>
           </div>
         </div>
         <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#128203;</span>
+          <span class="whats-new-icon" aria-hidden="true">&#128737;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item3.title">OWASP Top 10:2025</h3>
-            <p data-i18n="whatsnew.item3.desc">Every finding mapped to OWASP Top 10:2025 categories. See per-category coverage with compliance bars.</p>
-          </div>
-        </div>
-        <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#128225;</span>
-          <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item4.title">DNS-Only Fallback</h3>
-            <p data-i18n="whatsnew.item4.desc">When a web server is unreachable, GuardPad automatically analyzes DNS records and delivers a partial security grade. Works for mail-only domains.</p>
-          </div>
-        </div>
-        <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#128269;</span>
-          <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item5.title">Re-Scan Diff &amp; Share Card</h3>
-            <p data-i18n="whatsnew.item5.desc">See exactly what changed since your last scan with inline grade change badges. Share amber-themed grade cards.</p>
+            <h3 data-i18n="whatsnew.item3.title">Advanced Analysis (PRO)</h3>
+            <p data-i18n="whatsnew.item3.desc">WAF and CDN fingerprinting across 14 providers, subdomain discovery, API endpoint intelligence, PCI DSS 4.0 readiness, and percentile ranking.</p>
           </div>
         </div>
         <div class="whats-new-item">
           <span class="whats-new-icon" aria-hidden="true">&#128274;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item6.title">DNSSEC &amp; CAA Grading</h3>
-            <p data-i18n="whatsnew.item6.desc">DNSSEC validation status and CAA record 4-tier grading. Trusted Types CSP detection with A+ grade boost.</p>
+            <h3 data-i18n="whatsnew.item4.title">Post-Quantum TLS &amp; Modern Crypto</h3>
+            <p data-i18n="whatsnew.item4.desc">X25519MLKEM768 post-quantum cipher detection and TLS depth analysis so you know exactly what's protecting your traffic.</p>
+          </div>
+        </div>
+        <div class="whats-new-item">
+          <span class="whats-new-icon" aria-hidden="true">&#9993;</span>
+          <div class="whats-new-content">
+            <h3 data-i18n="whatsnew.item5.title">MTA-STS, BIMI &amp; .well-known</h3>
+            <p data-i18n="whatsnew.item5.desc">Mail transport security, brand indicators, a .well-known scanner, and the Reporting-Endpoints header — the full picture of modern web identity.</p>
+          </div>
+        </div>
+        <div class="whats-new-item">
+          <span class="whats-new-icon" aria-hidden="true">&#10024;</span>
+          <div class="whats-new-content">
+            <h3 data-i18n="whatsnew.item6.title">Polished Experience</h3>
+            <p data-i18n="whatsnew.item6.desc">WCAG contrast fixes, iPad-optimized layouts, refined haptics, and a new achievements system.</p>
           </div>
         </div>
       </div>
@@ -206,15 +211,15 @@
       </div>
       <div class="pro-card">
         <span class="pro-badge">PRO</span>
-        <p class="pro-price">$5.99</p>
-        <p class="pro-price-note" data-i18n="pro.onetimepurchase">One-time purchase</p>
+        <p class="pro-price" data-i18n="pro.priceLifetime">$9.99 Lifetime</p>
+        <p class="pro-price-note" data-i18n="pro.priceYearly">or $3.99 / year</p>
         <ul class="pro-features">
           <li data-i18n="pro.feature1">Unlimited scans</li>
+          <li data-i18n="pro.feature9">Continuous monitoring &amp; posture dashboard</li>
+          <li data-i18n="pro.feature10">WAF/CDN fingerprinting &amp; PCI DSS 4.0</li>
           <li data-i18n="pro.feature2">Batch URL scanning</li>
-          <li data-i18n="pro.feature3">Scan history &amp; domain grouping</li>
-          <li data-i18n="pro.feature4">iPad compare mode</li>
+          <li data-i18n="pro.feature3">Scan history, iCloud sync &amp; domain grouping</li>
           <li data-i18n="pro.feature5">Quick Fix code snippets</li>
-          <li data-i18n="pro.feature6">Smart recommendations by site type</li>
           <li data-i18n="pro.feature7">PDF, Markdown &amp; grade card export</li>
           <li data-i18n="pro.feature8">CORS tester &amp; advanced DNS</li>
         </ul>
