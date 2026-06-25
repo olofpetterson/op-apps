@@ -25,11 +25,11 @@
   <link rel="stylesheet" href="../shared/styles.css">
   <style>
     :root {
-      --color-accent: #00FF66;
-      --color-accent-hover: #33FF85;
+      --color-accent: #FF9500;
+      --color-accent-hover: #FFA733;
     }
     .app-icon {
-      box-shadow: 0 20px 60px rgba(0, 255, 102, 0.2);
+      box-shadow: 0 20px 60px rgba(255, 149, 0, 0.25);
     }
   </style>
   <title>ProbePad - Test REST APIs on iPhone & iPad</title>
@@ -59,11 +59,12 @@
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-content">
       <img src="app-icon.png" alt="ProbePad app icon" class="app-icon" width="120" height="120">
-      <h1 id="hero-title" data-i18n="hero.title">Test REST APIs on iPhone & iPad</h1>
-      <p class="hero-subtitle" data-i18n="hero.subtitle">ProbePad is a powerful, privacy-focused API testing app. Build requests, organize collections, and debug responses - all from your pocket.</p>
+      <h1 id="hero-title" data-i18n="hero.title">Test REST, GraphQL & WebSocket APIs on iPhone & iPad</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">ProbePad is a powerful, privacy-focused API testing app. Build REST and GraphQL requests, open WebSocket sessions, upload files, and trigger saved requests from Siri — all from your pocket. New in 1.5: multipart uploads, App Intents, and a fresh amber look.</p>
       <div class="hero-badges">
         <span class="badge" data-i18n="hero.badge.privacy">100% Private</span>
-        <span class="badge" data-i18n="hero.badge.offline">Works Offline</span>
+        <span class="badge" data-i18n="hero.badge.protocols">REST · GraphQL · WebSocket</span>
+        <span class="badge" data-i18n="hero.badge.shortcuts">Siri &amp; Shortcuts</span>
         <span class="badge" data-i18n="hero.badge.pro">PRO Features</span>
       </div>
       <a href="https://apps.apple.com/us/app/probepad/id6757448741" class="cta-button" data-i18n="hero.cta" target="_blank" rel="noopener">
@@ -83,32 +84,42 @@
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128225;</span>
           <h3 data-i18n="features.requests.title">HTTP Requests</h3>
-          <p data-i18n="features.requests.desc">GET, POST, PUT, PATCH, DELETE with full header and body control.</p>
+          <p data-i18n="features.requests.desc">GET, POST, PUT, PATCH, DELETE with full header and body control. Multipart/form-data with file upload built in.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#9881;</span>
+          <h3 data-i18n="features.graphql.title">GraphQL</h3>
+          <p data-i18n="features.graphql.desc">Dedicated query editor with variables, operation names, and pretty-printed responses. Run queries, mutations, and subscriptions.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128268;</span>
+          <h3 data-i18n="features.websocket.title">WebSocket</h3>
+          <p data-i18n="features.websocket.desc">Open WebSocket sessions, send text and binary frames, and inspect every message in a live transcript.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128193;</span>
-          <h3 data-i18n="features.collections.title">Collections</h3>
-          <p data-i18n="features.collections.desc">Organize requests into folders. Keep your workspace tidy.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#127760;</span>
-          <h3 data-i18n="features.environments.title">Environments</h3>
-          <p data-i18n="features.environments.desc">Switch between dev, staging, and production with one tap.</p>
+          <h3 data-i18n="features.collections.title">Collections &amp; Environments</h3>
+          <p data-i18n="features.collections.desc">Organize requests into folders. Switch between dev, staging, and production with one tap.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128274;</span>
           <h3 data-i18n="features.vault.title">Secrets Vault</h3>
-          <p data-i18n="features.vault.desc">Store API keys securely with Face ID / Touch ID protection.</p>
+          <p data-i18n="features.vault.desc">Store API keys securely in the iOS Keychain with Face ID / Touch ID protection. Secrets never leave your device.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128200;</span>
-          <h3 data-i18n="features.history.title">Response History</h3>
-          <p data-i18n="features.history.desc">Compare responses with JSON diff. Track changes over time.</p>
+          <h3 data-i18n="features.history.title">Response History &amp; Diff</h3>
+          <p data-i18n="features.history.desc">Compare responses with JSON diff. Track status, latency, and payload changes over time.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128172;</span>
+          <h3 data-i18n="features.shortcuts.title">Siri &amp; Shortcuts</h3>
+          <p data-i18n="features.shortcuts.desc">"Run Saved Request" and "Send HTTP Request" App Intents for Siri, the Shortcuts app, and Focus automations.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128257;</span>
-          <h3 data-i18n="features.import.title">Import & Export</h3>
-          <p data-i18n="features.import.desc">Import from Postman. Export to cURL. Work seamlessly.</p>
+          <h3 data-i18n="features.import.title">Import &amp; Export</h3>
+          <p data-i18n="features.import.desc">Import Postman v2.1 collections, paste cURL commands to create requests, and export back to cURL.</p>
         </article>
       </div>
     </div>
@@ -121,12 +132,12 @@
         <h2 id="screenshots-title" data-i18n="screenshots.title">See It in Action</h2>
       </div>
       <div class="screenshots-carousel" role="region" aria-label="App screenshots">
-        <img src="screenshot-1.png" alt="ProbePad request editor" class="screenshot" loading="lazy">
-        <img src="screenshot-2.png" alt="ProbePad response view" class="screenshot" loading="lazy">
-        <img src="screenshot-3.png" alt="ProbePad collections" class="screenshot" loading="lazy">
-        <img src="screenshot-4.png" alt="ProbePad environments" class="screenshot" loading="lazy">
-        <img src="screenshot-5.png" alt="ProbePad secrets vault" class="screenshot" loading="lazy">
-        <img src="screenshot-6.png" alt="ProbePad settings" class="screenshot" loading="lazy">
+        <img src="screenshot-1.png" alt="ProbePad request list with amber theme" class="screenshot" loading="lazy">
+        <img src="screenshot-2.png" alt="ProbePad HTTP request editor" class="screenshot" loading="lazy">
+        <img src="screenshot-3.png" alt="ProbePad HTTP response view with status and timing" class="screenshot" loading="lazy">
+        <img src="screenshot-4.png" alt="ProbePad GraphQL editor with query and variables" class="screenshot" loading="lazy">
+        <img src="screenshot-5.png" alt="ProbePad WebSocket session with message transcript" class="screenshot" loading="lazy">
+        <img src="screenshot-6.png" alt="ProbePad Warehouse Amber theme variant" class="screenshot" loading="lazy">
       </div>
     </div>
   </section>
@@ -135,36 +146,43 @@
   <section class="whats-new" aria-labelledby="whatsnew-title">
     <div class="container">
       <div class="section-header">
-        <span class="version-tag">v1.4.0</span>
+        <span class="version-tag">v1.5.0</span>
         <h2 id="whatsnew-title" data-i18n="whatsnew.title">What's New</h2>
       </div>
       <div class="whats-new-list">
         <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#128269;</span>
+          <span class="whats-new-icon" aria-hidden="true">&#128206;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item1.title">Search & Quick-Switch</h3>
-            <p data-i18n="whatsnew.item1.desc">Find requests instantly by name or URL. Switch environments from the toolbar without leaving your workflow.</p>
+            <h3 data-i18n="whatsnew.item1.title">Multipart File Upload</h3>
+            <p data-i18n="whatsnew.item1.desc">Multipart/form-data with file upload — test image uploads, file APIs, and any endpoint that expects form-data parts.</p>
           </div>
         </div>
         <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#128196;</span>
+          <span class="whats-new-icon" aria-hidden="true">&#128172;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item2.title">Inline Response Tabs</h3>
-            <p data-i18n="whatsnew.item2.desc">View responses right in the editor with a tabbed interface. No more dismissing modals - re-execute and see results in place.</p>
-          </div>
-        </div>
-        <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#9000;</span>
-          <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item3.title">cURL Import & Sample Requests</h3>
-            <p data-i18n="whatsnew.item3.desc">Create new requests from cURL commands. First-time users get pre-loaded examples to start testing immediately.</p>
+            <h3 data-i18n="whatsnew.item2.title">Apple Shortcuts &amp; Siri</h3>
+            <p data-i18n="whatsnew.item2.desc">App Intents for "Run Saved Request" and "Send HTTP Request" — wire ProbePad into Siri, the Shortcuts app, and Focus automations.</p>
           </div>
         </div>
         <div class="whats-new-item">
           <span class="whats-new-icon" aria-hidden="true">&#9000;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item4.title">iPad Keyboard Shortcuts</h3>
-            <p data-i18n="whatsnew.item4.desc">Full keyboard workflow with Cmd+K search, Cmd+E environment switch, Cmd+Return execute, and more.</p>
+            <h3 data-i18n="whatsnew.item3.title">JSON Keyboard Accessory</h3>
+            <p data-i18n="whatsnew.item3.desc">{ } " : , [ ] and your environment variables sit as one-tap chips above the system keyboard. No more hunting for brackets.</p>
+          </div>
+        </div>
+        <div class="whats-new-item">
+          <span class="whats-new-icon" aria-hidden="true">&#10024;</span>
+          <div class="whats-new-content">
+            <h3 data-i18n="whatsnew.item4.title">New Amber Icon &amp; Liquid Glass</h3>
+            <p data-i18n="whatsnew.item4.desc">A redesigned amber probe matches the in-app palette. Liquid Glass on the Send button and tab bar on iOS 26, with translucent fallback on iOS 17–18.</p>
+          </div>
+        </div>
+        <div class="whats-new-item">
+          <span class="whats-new-icon" aria-hidden="true">&#128242;</span>
+          <div class="whats-new-content">
+            <h3 data-i18n="whatsnew.item5.title">Response Toast &amp; Haptics</h3>
+            <p data-i18n="whatsnew.item5.desc">"201 · 245 ms · 1.2 KB" slides in when a request completes. Haptic feedback on send, response arrival, errors, copy, and method changes.</p>
           </div>
         </div>
       </div>

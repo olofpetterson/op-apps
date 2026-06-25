@@ -20,8 +20,8 @@
   <link rel="stylesheet" href="../shared/styles.css">
   <style>
     :root {
-      --color-accent: #00FF66;
-      --color-accent-hover: #33FF85;
+      --color-accent: #FF9500;
+      --color-accent-hover: #FFA733;
     }
   </style>
   <title>Support - ProbePad</title>
@@ -116,6 +116,33 @@
             <p class="faq-answer-content" data-i18n="support.faq.a6">Yes! Enable iCloud Sync in Settings to keep your requests, collections, and environments synchronized across all your Apple devices.</p>
           </div>
         </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q7">Does ProbePad support GraphQL and WebSocket?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a7">Yes. New in 1.5: a dedicated GraphQL editor for queries, mutations, and subscriptions (with variables and operation names), and a WebSocket session view for opening connections and inspecting every text or binary frame in a live transcript.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q8">Can I trigger requests from Siri or Shortcuts?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a8">Yes. ProbePad 1.5 ships two App Intents — "Run Saved Request" and "Send HTTP Request" — that work in Siri, the Shortcuts app, and Focus automations. Wire a saved request to a Home Screen tile or a daily shortcut and you're done.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q9">How do I upload a file?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a9">Switch the body type to multipart/form-data, add a part, and pick a file from the Files app. ProbePad streams it with the correct boundary and Content-Type — perfect for image uploads and any endpoint that expects form-data parts.</p>
+          </div>
+        </div>
       </section>
 
       <!-- Troubleshooting Section -->
@@ -153,7 +180,7 @@
       <section class="content-section" aria-labelledby="version-title">
         <h2 id="version-title" data-i18n="support.version">Current Version</h2>
         <div class="info-box">
-          <p><strong>ProbePad v1.4.0</strong></p>
+          <p><strong>ProbePad v1.5.0</strong></p>
           <p class="text-muted">Requires iOS 17.0 or later. Compatible with iPhone and iPad.</p>
         </div>
       </section>
