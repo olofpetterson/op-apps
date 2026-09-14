@@ -77,7 +77,7 @@
             <span data-i18n="support.faq.q2">How do I import from Postman?</span>
           </button>
           <div class="faq-answer">
-            <p class="faq-answer-content" data-i18n="support.faq.a2">Export your Postman collection as JSON v2.1, then in ProbePad go to Settings > Import > select your file. Your requests and folders will be imported.</p>
+            <p class="faq-answer-content" data-i18n="support.faq.a2">Export your Postman collection as JSON v2.1, then in ProbePad go to Settings > Import > select your file. Your requests and collections will be imported.</p>
           </div>
         </div>
 
@@ -104,7 +104,7 @@
             <span data-i18n="support.faq.q5">What's included in PRO?</span>
           </button>
           <div class="faq-answer">
-            <p class="faq-answer-content" data-i18n="support.faq.a5">PRO unlocks unlimited requests, collections, environments, response history, and removes all limits. One-time purchase works across all your devices.</p>
+            <p class="faq-answer-content" data-i18n="support.faq.a5">PRO unlocks environments and variables, the secrets vault, OAuth, GraphQL, WebSocket, Postman and OpenAPI import, and endpoint monitoring. Collections, response diff and cURL import are free for everyone. Pay once for lifetime or yearly — both unlock the same features.</p>
           </div>
         </div>
 
@@ -113,7 +113,7 @@
             <span data-i18n="support.faq.q6">Does ProbePad sync across devices?</span>
           </button>
           <div class="faq-answer">
-            <p class="faq-answer-content" data-i18n="support.faq.a6">Yes! Enable iCloud Sync in Settings to keep your requests, collections, and environments synchronized across all your Apple devices.</p>
+            <p class="faq-answer-content" data-i18n="support.faq.a6">Not in this release. Your requests, collections, environments and history stay on the device where you created them, and secrets live in that device's Keychain. To move a request to another device, export it as cURL and paste it there.</p>
           </div>
         </div>
 
@@ -122,7 +122,7 @@
             <span data-i18n="support.faq.q7">Does ProbePad support GraphQL and WebSocket?</span>
           </button>
           <div class="faq-answer">
-            <p class="faq-answer-content" data-i18n="support.faq.a7">Yes. New in 1.5: a dedicated GraphQL editor for queries, mutations, and subscriptions (with variables and operation names), and a WebSocket session view for opening connections and inspecting every text or binary frame in a live transcript.</p>
+            <p class="faq-answer-content" data-i18n="support.faq.a7">Yes. A dedicated GraphQL editor for queries, mutations, and subscriptions (with variables and operation names), and a WebSocket session view for opening connections and inspecting every text or binary frame in a live transcript. Both are PRO.</p>
           </div>
         </div>
 
@@ -131,7 +131,7 @@
             <span data-i18n="support.faq.q8">Can I trigger requests from Siri or Shortcuts?</span>
           </button>
           <div class="faq-answer">
-            <p class="faq-answer-content" data-i18n="support.faq.a8">Yes. ProbePad 1.5 ships two App Intents — "Run Saved Request" and "Send HTTP Request" — that work in Siri, the Shortcuts app, and Focus automations. Wire a saved request to a Home Screen tile or a daily shortcut and you're done.</p>
+            <p class="faq-answer-content" data-i18n="support.faq.a8">Yes. ProbePad ships two App Intents — "Run Saved Request" and "Send HTTP Request" — that work in Siri, the Shortcuts app, and Focus automations. Wire a saved request to a Home Screen tile or a daily shortcut and you're done.</p>
           </div>
         </div>
 
@@ -141,6 +141,51 @@
           </button>
           <div class="faq-answer">
             <p class="faq-answer-content" data-i18n="support.faq.a9">Switch the body type to multipart/form-data, add a part, and pick a file from the Files app. ProbePad streams it with the correct boundary and Content-Type — perfect for image uploads and any endpoint that expects form-data parts.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q10">Does ProbePad have widgets, and what do they show?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a10">Three. Last Request shows your most recent run with its status and when it ran. Request Status shows a request you pick, with its last status and response time, and also comes as a Lock Screen circular. Endpoint Monitor (PRO) shows a watched endpoint's last result and when it was checked. A widget only ever sees a summary — request name, host, status, timing — never a header, a body or a token.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q11">Does ProbePad check my endpoints when the app is closed?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a11">Yes, for requests you have marked as watched. ProbePad asks iOS for background time and runs those checks when it is granted. iOS decides when that happens, so ProbePad never promises a schedule — instead the widget and the app both tell you when the last check actually happened. If Background App Refresh is switched off for ProbePad, the app says so plainly and checks run only while it is open.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q12">I bought ProbePad at the old price. Do I have to pay again?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a12">No. Your purchase covers every PRO feature permanently, including everything new in v1.6, at no extra charge. Entitlement is recognized by the product you bought, so there is nothing to do — beyond tapping Restore Purchase once after installing on a new device.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q13">Is there a subscription? What happens if I cancel?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a13">There is a yearly plan at US$9.99 with seven days free, and a one-time lifetime purchase at US$19.99. They unlock exactly the same features — choose how you pay. If you cancel the yearly plan, it runs to the end of the period you paid for and then stops renewing; your requests, collections and history stay on your device either way, and the free tier keeps working.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="support.faq.q14">Does anything leave my device?</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content" data-i18n="support.faq.a14">Only the API requests you choose to send, to the endpoints you type. ProbePad has no server, no account and no analytics — no advertising identifier, no third-party SDK, no telemetry of any kind. Your requests, tokens and secrets stay on your device; secrets live in the iOS Keychain. Cross-device syncing is not part of this release.</p>
           </div>
         </div>
       </section>
@@ -180,7 +225,7 @@
       <section class="content-section" aria-labelledby="version-title">
         <h2 id="version-title" data-i18n="support.version">Current Version</h2>
         <div class="info-box">
-          <p><strong>ProbePad v1.5.0</strong></p>
+          <p><strong>ProbePad v1.6.0</strong></p>
           <p class="text-muted">Requires iOS 17.0 or later. Compatible with iPhone and iPad.</p>
         </div>
       </section>
