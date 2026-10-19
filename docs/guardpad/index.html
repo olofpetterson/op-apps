@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="GuardPad - HTTP Security Scanner for iPhone & iPad. Context-sensitive security grades in 3 seconds. Analyze 11 security headers, cookies, SSL/TLS, email security (SPF/DMARC/DKIM), OWASP compliance, and DNS.">
+  <meta name="description" content="GuardPad for iPhone and iPad: see what needs fixing on your site — and verify the improvement. Top fixes first, server config code, and a finding-by-finding check after you rescan.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="GuardPad - HTTP Security Scanner">
-  <meta property="og:description" content="Context-sensitive security grades in 3 seconds. Analyze 11 security headers, cookies, SSL/TLS, email security, OWASP compliance, and DNS — adapted to your site type.">
+  <meta property="og:title" content="GuardPad — fix and verify website security">
+  <meta property="og:description" content="See what needs fixing on your site — and verify the improvement. Top fixes first, then a finding-by-finding check after you rescan.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://olofpetterson.github.io/op-apps/guardpad/">
+  <meta property="og:image" content="https://olofpetterson.github.io/op-apps/guardpad/screenshot-3.png">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="GuardPad - HTTP Security Scanner">
-  <meta name="twitter:description" content="Context-sensitive mobile security scanning for developers and security professionals.">
+  <meta name="twitter:title" content="GuardPad — fix and verify website security">
+  <meta name="twitter:description" content="See what needs fixing on your site — and verify the improvement.">
 
   <!-- Language alternates -->
   <link rel="alternate" hreflang="en" href="?lang=en">
@@ -32,7 +33,7 @@
       box-shadow: 0 20px 60px rgba(255, 176, 0, 0.2);
     }
   </style>
-  <title>GuardPad - HTTP Security Scanner</title>
+  <title>GuardPad - Fix and Verify Website Security</title>
 </head>
 <body>
   <!-- Navigation -->
@@ -60,13 +61,13 @@
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-content">
       <div class="app-icon" style="width: 120px; height: 120px; background: linear-gradient(135deg, #FFB000 0%, #FF8C00 100%); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; margin: 0 auto var(--spacing-lg);">&#128737;</div>
-      <h1 id="hero-title" data-i18n="hero.title">Native iOS Security Scanner</h1>
-      <p class="hero-subtitle" data-i18n="hero.subtitle">Scan from Safari with the Share Extension, ask Siri, glance at your widget. GuardPad analyzes 30+ security dimensions — headers, TLS, DNS, email, WAF — and grades them by site type. New in 2.0: continuous monitoring, PCI DSS 4.0, post-quantum TLS.</p>
+      <h1 id="hero-title" data-i18n="hero.title">See what needs fixing on your site — and verify the improvement.</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">GuardPad checks a website's security configuration from your iPhone or iPad, puts the three fixes that matter most at the top, and after you change your server tells you finding by finding what is resolved, still present, new — or could not be verified.</p>
       <div class="hero-badges">
-        <span class="badge" data-i18n="hero.badge.native">Share · Siri · Widgets</span>
-        <span class="badge" data-i18n="hero.badge.monitoring">Continuous Monitoring</span>
-        <span class="badge" data-i18n="hero.badge.context">Context-Aware Grading</span>
-        <span class="badge" data-i18n="hero.badge.dimensions">30+ Dimensions</span>
+        <span class="badge" data-i18n="hero.badge.fixfirst">Fix first</span>
+        <span class="badge" data-i18n="hero.badge.verify">Rescan to verify</span>
+        <span class="badge" data-i18n="hero.badge.trial">3-day PRO trial</span>
+        <span class="badge" data-i18n="hero.badge.private">No account · no tracking</span>
       </div>
       <a href="https://apps.apple.com/us/app/guardpad/id6759147267" class="cta-button" data-i18n="hero.cta" target="_blank" rel="noopener">
         Download on App Store
@@ -78,54 +79,39 @@
   <section class="features" aria-labelledby="features-title">
     <div class="container">
       <div class="section-header">
-        <h2 id="features-title" data-i18n="features.title">Comprehensive Security Analysis</h2>
-        <p data-i18n="features.subtitle">Professional-grade security scanning tools, designed for mobile.</p>
+        <h2 id="features-title" data-i18n="features.title">Understand, fix, verify</h2>
+        <p data-i18n="features.subtitle">Built for freelance developers and small web agencies who look after client sites.</p>
       </div>
       <div class="features-grid">
         <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128241;</span>
-          <h3 data-i18n="features.native.title">Native iOS</h3>
-          <p data-i18n="features.native.desc">Share Extension from Safari, Siri Shortcuts, Home and Lock Screen widgets, and a Control Center toggle. TipKit-guided onboarding.</p>
-        </article>
-        <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128202;</span>
-          <h3 data-i18n="features.monitoring.title">Continuous Monitoring</h3>
-          <p data-i18n="features.monitoring.desc">Background re-scans, certificate expiry alerts, grade trend charts, and a security posture dashboard. PRO.</p>
+          <h3 data-i18n="features.understand.title">1 · Understand</h3>
+          <p data-i18n="features.understand.desc">An A+ to F grade that summarises the checks performed, with the highest-impact fixes first. A grade is not a guarantee of security or a certification, and GuardPad says so.</p>
         </article>
         <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128737;</span>
-          <h3 data-i18n="features.waf.title">WAF &amp; CDN Fingerprinting</h3>
-          <p data-i18n="features.waf.desc">Identify 14 WAF/CDN providers, discover subdomains, inspect API endpoints, and check PCI DSS 4.0 readiness. PRO.</p>
+          <span class="feature-icon" aria-hidden="true">&#128295;</span>
+          <h3 data-i18n="features.fix.title">2 · Fix</h3>
+          <p data-i18n="features.fix.desc">Every finding shows what was observed, why it matters and what to change. PRO adds ready-to-paste config for nginx, Apache, Express.js and Caddy.</p>
         </article>
         <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128279;</span>
-          <h3 data-i18n="features.scan.title">Context-Sensitive Scan</h3>
-          <p data-i18n="features.scan.desc">Enter any URL and get a context-sensitive security grade in seconds. Your site type is detected automatically.</p>
+          <span class="feature-icon" aria-hidden="true">&#9989;</span>
+          <h3 data-i18n="features.verify.title">3 · Verify</h3>
+          <p data-i18n="features.verify.desc">Rescan the same site. Each earlier finding is marked Resolved, Still present, New or Not verified. An unchanged overall grade never hides a fix, and an incomplete scan never counts as one.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">&#128276;</span>
+          <h3 data-i18n="features.follow.title">Follow up without guessing</h3>
+          <p data-i18n="features.follow.desc">Pin client sites. When iOS allows, GuardPad re-scans them in the background and notifies you only when a grade or header changes. Each site shows when it was last checked — and whether that check failed or is getting old. PRO.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">&#128274;</span>
-          <h3 data-i18n="features.headers.title">Headers &amp; Modern TLS</h3>
-          <p data-i18n="features.headers.desc">11+ security headers with site-type-aware weighting, CSP depth scoring, TLS depth analysis, and post-quantum cipher detection (X25519MLKEM768).</p>
+          <h3 data-i18n="features.checks.title">What is checked</h3>
+          <p data-i18n="features.checks.desc">11 graded security headers, SSL/TLS including post-quantum key exchange, cookie flags, SPF, DMARC, DKIM, MTA-STS and BIMI, redirects, security.txt and WAF/CDN fingerprints — mapped to OWASP Top 10:2025.</p>
         </article>
         <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#9993;</span>
-          <h3 data-i18n="features.email.title">Email Security &amp; MTA-STS</h3>
-          <p data-i18n="features.email.desc">Grade SPF, DMARC, and DKIM individually. MTA-STS, BIMI, and .well-known scanner. Detect spoofable domains with actionable DNS fix snippets.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128203;</span>
-          <h3 data-i18n="features.owasp.title">OWASP &amp; PCI DSS 4.0</h3>
-          <p data-i18n="features.owasp.desc">Every finding mapped to OWASP Top 10:2025 categories with compliance bars. PCI DSS 4.0 readiness checks (PRO).</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128421;</span>
-          <h3 data-i18n="features.dns.title">DNS &amp; DNSSEC</h3>
-          <p data-i18n="features.dns.desc">Query all record types. DNSSEC validation, CAA grading, and DNS-only fallback for unreachable servers.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#9889;</span>
-          <h3 data-i18n="features.quickfix.title">Quick Fix</h3>
-          <p data-i18n="features.quickfix.desc">Impact-sorted issues with server-specific code snippets for nginx, Apache, Express.js, and Caddy.</p>
+          <span class="feature-icon" aria-hidden="true">&#128241;</span>
+          <h3 data-i18n="features.private.title">Private by design</h3>
+          <p data-i18n="features.private.desc">No account. No analytics SDKs. No tracking. Scans run from your device and results stay on it. Feedback is optional — you see the whole message first and send it yourself.</p>
         </article>
       </div>
     </div>
@@ -138,12 +124,10 @@
         <h2 id="screenshots-title" data-i18n="screenshots.title">See It in Action</h2>
       </div>
       <div class="screenshots-carousel" role="region" aria-label="App screenshots">
-        <img src="screenshot-1.png" alt="GuardPad scan results with context-sensitive grade and site type badge" class="screenshot" loading="lazy">
-        <img src="screenshot-2.png" alt="GuardPad security posture dashboard with continuous monitoring" class="screenshot" loading="lazy">
-        <img src="screenshot-3.png" alt="GuardPad grade trend chart over time" class="screenshot" loading="lazy">
-        <img src="screenshot-4.png" alt="GuardPad batch URL scanning across multiple domains" class="screenshot" loading="lazy">
-        <img src="screenshot-5.png" alt="GuardPad Quick Fix with server-specific code snippets" class="screenshot" loading="lazy">
-        <img src="screenshot-6.png" alt="GuardPad CORS tester with preflight and credential checks" class="screenshot" loading="lazy">
+        <img src="screenshot-1.png" alt="GuardPad results with the FIX FIRST list: DMARC policy and Content-Security-Policy, each with what was observed, why it matters and the fix." class="screenshot" loading="lazy">
+        <img src="screenshot-2.png" alt="Quick Fixes sheet showing observed, why it matters, fix, and an nginx config snippet." class="screenshot" loading="lazy">
+        <img src="screenshot-3.png" alt="Verification after a rescan: 4 resolved, 8 still present, with Content-Security-Policy, Permissions-Policy, Server and a session cookie marked resolved." class="screenshot" loading="lazy">
+        <img src="screenshot-4.png" alt="Pinned domains list: checked 3h ago, checked 6h ago, last check failed (timed out), last checked 2d ago — may be out of date." class="screenshot" loading="lazy">
       </div>
     </div>
   </section>
@@ -152,50 +136,43 @@
   <section class="whats-new" aria-labelledby="whatsnew-title">
     <div class="container">
       <div class="section-header">
-        <span class="version-tag">v2.0</span>
+        <span class="version-tag">v2.1</span>
         <h2 id="whatsnew-title" data-i18n="whatsnew.title">What's New</h2>
       </div>
       <div class="whats-new-list">
         <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#128241;</span>
+          <span class="whats-new-icon" aria-hidden="true">&#128073;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item1.title">Native iOS Integration</h3>
-            <p data-i18n="whatsnew.item1.desc">Share Extension scans straight from Safari. Siri Shortcuts, Home and Lock Screen widgets, a Control Center toggle, and TipKit-guided onboarding.</p>
+            <h3 data-i18n="whatsnew.item1.title">Fix first</h3>
+            <p data-i18n="whatsnew.item1.desc">Results now open with your top three fixes: what was observed, why it matters, and what to change.</p>
           </div>
         </div>
         <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#128202;</span>
+          <span class="whats-new-icon" aria-hidden="true">&#9989;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item2.title">Continuous Monitoring (PRO)</h3>
-            <p data-i18n="whatsnew.item2.desc">Background re-scans, certificate expiry alerts, grade trend charts, and a security posture dashboard that tracks your portfolio over time.</p>
+            <h3 data-i18n="whatsnew.item2.title">Rescan to verify</h3>
+            <p data-i18n="whatsnew.item2.desc">After changing your server, rescan from the fix list. Each earlier finding is marked Resolved, Still present, New or Not verified — and PDF and Markdown reports include the verification.</p>
           </div>
         </div>
         <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#128737;</span>
+          <span class="whats-new-icon" aria-hidden="true">&#128276;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item3.title">Advanced Analysis (PRO)</h3>
-            <p data-i18n="whatsnew.item3.desc">WAF and CDN fingerprinting across 14 providers, subdomain discovery, API endpoint intelligence, PCI DSS 4.0 readiness, and percentile ranking.</p>
-          </div>
-        </div>
-        <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#128274;</span>
-          <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item4.title">Post-Quantum TLS &amp; Modern Crypto</h3>
-            <p data-i18n="whatsnew.item4.desc">X25519MLKEM768 post-quantum cipher detection and TLS depth analysis so you know exactly what's protecting your traffic.</p>
+            <h3 data-i18n="whatsnew.item3.title">Honest monitoring status</h3>
+            <p data-i18n="whatsnew.item3.desc">Each pinned domain shows when it was last checked in the background, whether the last check failed, and when the information may be out of date. You're told if Background App Refresh or notifications are off.</p>
           </div>
         </div>
         <div class="whats-new-item">
           <span class="whats-new-icon" aria-hidden="true">&#9993;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item5.title">MTA-STS, BIMI &amp; .well-known</h3>
-            <p data-i18n="whatsnew.item5.desc">Mail transport security, brand indicators, a .well-known scanner, and the Reporting-Endpoints header — the full picture of modern web identity.</p>
+            <h3 data-i18n="whatsnew.item4.title">Feedback you control</h3>
+            <p data-i18n="whatsnew.item4.desc">"Report an incorrect result" on findings, and "Send Feedback / Request a Feature" in Settings. You preview everything before you send it from Mail — nothing is sent automatically.</p>
           </div>
         </div>
         <div class="whats-new-item">
           <span class="whats-new-icon" aria-hidden="true">&#10024;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item6.title">Polished Experience</h3>
-            <p data-i18n="whatsnew.item6.desc">WCAG contrast fixes, iPad-optimized layouts, refined haptics, and a new achievements system.</p>
+            <h3 data-i18n="whatsnew.item5.title">Fixes</h3>
+            <p data-i18n="whatsnew.item5.desc">Scans of different sites are no longer compared, the SSL badge shows the direction of change, Restore Purchases syncs with the App Store first, and the largest text sizes no longer cut off the scan field.</p>
           </div>
         </div>
       </div>
@@ -206,23 +183,21 @@
   <section class="pro-section" aria-labelledby="pro-title">
     <div class="container">
       <div class="section-header">
-        <h2 id="pro-title" data-i18n="pro.title">Unlock PRO</h2>
-        <p data-i18n="pro.subtitle">One-time purchase. No subscription.</p>
+        <h2 id="pro-title" data-i18n="pro.title">Free &amp; PRO</h2>
+        <p data-i18n="pro.subtitle">Scanning, the fix list and rescan verification are free. So are history, widgets, the Share Extension and Siri.</p>
       </div>
       <div class="pro-card">
         <span class="pro-badge">PRO</span>
-        <p class="pro-price" data-i18n="pro.priceLifetime">$9.99 Lifetime</p>
-        <p class="pro-price-note" data-i18n="pro.priceYearly">or $3.99 / year</p>
+        <p class="pro-price" data-i18n="pro.plans">Yearly or Lifetime</p>
+        <p class="pro-price-note" data-i18n="pro.priceNote">Prices are shown in the App Store in your currency. Every PRO feature is free to try for 3 days.</p>
         <ul class="pro-features">
-          <li data-i18n="pro.feature1">Unlimited scans</li>
-          <li data-i18n="pro.feature9">Continuous monitoring &amp; posture dashboard</li>
-          <li data-i18n="pro.feature10">WAF/CDN fingerprinting &amp; PCI DSS 4.0</li>
-          <li data-i18n="pro.feature2">Batch URL scanning</li>
-          <li data-i18n="pro.feature3">Scan history, iCloud sync &amp; domain grouping</li>
-          <li data-i18n="pro.feature5">Quick Fix code snippets</li>
-          <li data-i18n="pro.feature7">PDF, Markdown &amp; grade card export</li>
-          <li data-i18n="pro.feature8">CORS tester &amp; advanced DNS</li>
+          <li data-i18n="pro.feature1">Server config code for nginx, Apache, Express.js and Caddy</li>
+          <li data-i18n="pro.feature2">PDF and Markdown reports, including what was verified</li>
+          <li data-i18n="pro.feature3">Background re-scans of pinned domains and certificate expiry reminders</li>
+          <li data-i18n="pro.feature4">Trends, posture dashboard and scan comparison</li>
+          <li data-i18n="pro.feature5">Batch scan of up to 50 URLs</li>
         </ul>
+        <p class="pro-price-note" data-i18n="pro.monitoringNote">Background re-scans are periodic, not continuous: iOS decides when they run. Yearly covers up to five pinned domains, Lifetime covers one.</p>
         <a href="https://apps.apple.com/us/app/guardpad/id6759147267" class="cta-button" data-i18n="hero.cta" target="_blank" rel="noopener">Download on App Store</a>
       </div>
     </div>
@@ -231,8 +206,8 @@
   <!-- Download Section -->
   <section class="download" id="download" aria-labelledby="download-title">
     <div class="container">
-      <h2 id="download-title" data-i18n="download.title">Ready to Secure?</h2>
-      <p data-i18n="download.subtitle">Download GuardPad and start scanning today.</p>
+      <h2 id="download-title" data-i18n="download.title">Fix it. Then verify it.</h2>
+      <p data-i18n="download.subtitle">Only scan sites you own or are permitted to test.</p>
       <a href="https://apps.apple.com/us/app/guardpad/id6759147267" class="cta-button" target="_blank" rel="noopener" aria-label="Download GuardPad on the App Store">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>

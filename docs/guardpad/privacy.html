@@ -48,7 +48,7 @@
     <div class="container">
       <h1 data-i18n="privacy.title">Privacy Policy</h1>
       <p data-i18n="privacy.subtitle">Your data stays on your device</p>
-      <p class="text-muted" data-i18n="privacy.updated">Last updated: February 2026</p>
+      <p class="text-muted" data-i18n="privacy.updated">Last updated: October 2026</p>
     </div>
   </header>
 
@@ -86,13 +86,24 @@
       <section class="content-section" aria-labelledby="storage-title">
         <h2 id="storage-title" data-i18n="privacy.storage.title">Data Storage</h2>
         <p data-i18n="privacy.storage.content">Your scan history is stored locally using Apple's SwiftData framework. No personal information is collected during scans.</p>
-        <p data-i18n="privacy.storage.icloud">If you enable iCloud Sync (PRO feature), your scan history is synchronized through your personal iCloud account. This is entirely optional.</p>
+      </section>
+
+      <section class="content-section" aria-labelledby="network-title">
+        <h2 id="network-title" data-i18n="privacy.network.title">Network Requests</h2>
+        <p data-i18n="privacy.network.content">When you scan a URL, your device connects directly to the target server to retrieve HTTP headers and certificate information. No intermediary servers are used.</p>
+        <p data-i18n="privacy.network.dns">DNS record lookups use DNS-over-HTTPS via the public Cloudflare (1.1.1.1) and Google (8.8.8.8) resolvers. These are standard DNS queries — no personal data is included beyond the domain name you choose to look up.</p>
       </section>
 
       <section class="content-section" aria-labelledby="thirdparty-title">
         <h2 id="thirdparty-title" data-i18n="privacy.thirdparty.title">Third-Party Services</h2>
         <p data-i18n="privacy.thirdparty.content">GuardPad does not integrate any third-party analytics, advertising, or tracking services. The only network requests are the security scans you initiate.</p>
         <p data-i18n="privacy.thirdparty.appstore">We use Apple's App Store for distribution and purchase management. Apple's privacy policy governs their handling of purchase data.</p>
+      </section>
+
+      <section class="content-section" aria-labelledby="feedback-title">
+        <h2 id="feedback-title" data-i18n="privacy.feedback.title">Feedback &amp; Support Email</h2>
+        <p data-i18n="privacy.feedback.content">Feedback is always voluntary. GuardPad shows you the full message before anything is shared, and it is only sent if you send it yourself from your Mail app (or copy it into an email). The message contains what you write plus the app version, build and iOS version. A finding type, the scanned domain or the observed header value are only included if you choose to. Cookies, authorization headers, query strings and URL credentials are never included.</p>
+        <p data-i18n="privacy.feedback.inbox">Messages you send arrive in the support inbox (op.apps@outlook.com) and are used only to answer you and improve GuardPad.</p>
       </section>
 
       <section class="content-section" aria-labelledby="rights-title">
@@ -102,7 +113,6 @@
           <li data-i18n="privacy.rights.item1">Export scan reports at any time</li>
           <li data-i18n="privacy.rights.item2">Delete individual scans or all history</li>
           <li data-i18n="privacy.rights.item3">Delete all app data by uninstalling the app</li>
-          <li data-i18n="privacy.rights.item4">Disable iCloud Sync to keep data on a single device</li>
         </ul>
       </section>
 
