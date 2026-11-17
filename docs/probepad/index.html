@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ProbePad - Native API client for iPhone & iPad with background endpoint monitoring, Home & Lock Screen widgets, REST, GraphQL and WebSocket. No cloud, no agent - everything stays on your device.">
+  <meta name="description" content="ProbePad is a native API client for iPhone and iPad. Paste a cURL command, run it, and read the response. REST, GraphQL and WebSocket. No account, no analytics - your data stays on your device.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="ProbePad - Your phone watches your endpoints">
-  <meta property="og:description" content="Background health checks, failure alerts and status widgets - no cloud, no agent, no laptop. A native API client for iPhone and iPad; everything stays on your device.">
+  <meta property="og:title" content="ProbePad - Debug your API without opening your laptop">
+  <meta property="og:description" content="A native API client for iPhone and iPad. Paste a cURL command, run it, and read what came back. No account, no analytics; your data stays on your device.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://olofpetterson.github.io/op-apps/probepad/">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ProbePad - Your phone watches your endpoints">
-  <meta name="twitter:description" content="Background endpoint monitoring and status widgets in a native, privacy-first API client for iPhone and iPad.">
+  <meta name="twitter:title" content="ProbePad - Debug your API without opening your laptop">
+  <meta name="twitter:description" content="A native API client for iPhone and iPad. Paste a cURL command, run it, and read what came back.">
 
   <!-- Language alternates -->
   <link rel="alternate" hreflang="en" href="?lang=en">
@@ -82,8 +82,64 @@
     .grandfather-card p {
       color: var(--color-secondary-text);
     }
+    .steps-grid .feature-card {
+      text-align: center;
+    }
+    .step-shot {
+      display: block;
+      width: 100%;
+      max-width: 260px;
+      height: auto;
+      margin: 0 auto var(--spacing-md);
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    }
+    .split {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: var(--spacing-xl);
+    }
+    .split-text {
+      flex: 1 1 320px;
+      max-width: 520px;
+    }
+    .split-text h2 {
+      margin-bottom: var(--spacing-md);
+    }
+    .split-text p {
+      color: var(--color-secondary-text);
+    }
+    .split-shot {
+      flex: 0 0 auto;
+      width: 240px;
+      max-width: 70vw;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    }
+    .pro-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 var(--spacing-md);
+    }
+    .pro-list li {
+      padding: var(--spacing-sm) 0;
+      border-bottom: 1px solid var(--color-surface-elevated);
+    }
+    .pro-list li:last-child {
+      border-bottom: none;
+    }
+    .supporting {
+      max-width: var(--content-width);
+      margin: 0 auto;
+    }
+    .supporting p {
+      color: var(--color-secondary-text);
+    }
   </style>
-  <title>ProbePad - API Client & Endpoint Monitoring for iPhone & iPad</title>
+  <title>ProbePad - API Client for iPhone &amp; iPad</title>
 </head>
 <body>
   <!-- Navigation -->
@@ -110,13 +166,12 @@
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-content">
       <img src="app-icon.png" alt="ProbePad app icon" class="app-icon" width="120" height="120">
-      <h1 id="hero-title" data-i18n="hero.title">Your phone watches your endpoints.</h1>
-      <p class="hero-subtitle" data-i18n="hero.subtitle">Background health checks, failure alerts and status widgets — no cloud, no agent, no laptop. ProbePad is a native API client for iPhone and iPad, and everything stays on your device.</p>
+      <h1 id="hero-title" data-i18n="hero.title">Debug your API without opening your laptop.</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">ProbePad is a native API client for iPhone and iPad. Paste a cURL command, run it, and read what came back.</p>
       <div class="hero-badges">
-        <span class="badge" data-i18n="hero.badge.privacy">100% Private</span>
-        <span class="badge" data-i18n="hero.badge.monitoring">Background monitoring</span>
-        <span class="badge" data-i18n="hero.badge.widgets">Home &amp; Lock Screen widgets</span>
+        <span class="badge" data-i18n="hero.badge.curl">cURL import is free</span>
         <span class="badge" data-i18n="hero.badge.protocols">REST · GraphQL · WebSocket</span>
+        <span class="badge" data-i18n="hero.badge.noaccount">No account</span>
       </div>
       <a href="https://apps.apple.com/us/app/probepad/id6757448741" class="cta-button" data-i18n="hero.cta" target="_blank" rel="noopener">
         Download on App Store
@@ -124,152 +179,108 @@
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section class="features" aria-labelledby="features-title">
+  <!-- Three steps -->
+  <section class="features" aria-labelledby="steps-title">
     <div class="container">
       <div class="section-header">
-        <h2 id="features-title" data-i18n="features.title">Everything You Need</h2>
-        <p data-i18n="features.subtitle">Professional API testing tools, designed for mobile.</p>
+        <h2 id="steps-title" data-i18n="steps.title">From cURL to response in three steps</h2>
       </div>
-      <div class="features-grid">
+      <div class="features-grid steps-grid">
         <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128065;</span>
-          <span class="tier tier-pro" data-i18n="features.tier.pro">PRO</span>
-          <h3 data-i18n="features.monitoring.title">Endpoint Monitoring</h3>
-          <p data-i18n="features.monitoring.desc">Mark a saved request as watched and ProbePad runs it in the background, then tells you when it starts failing. It shows when the last check happened — iOS decides when the next one is granted.</p>
+          <img src="screenshot-1.png" alt="Paste a cURL command and ProbePad turns it into an editable request" class="step-shot" loading="lazy" width="660" height="1434">
+          <h3 data-i18n="steps.1.title">1. Reuse your request</h3>
+          <p data-i18n="steps.1.desc">Paste a cURL command and get an editable request. Free.</p>
         </article>
         <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128241;</span>
-          <span class="tier tier-free" data-i18n="features.tier.mixed">Free + PRO</span>
-          <h3 data-i18n="features.widgets.title">Home &amp; Lock Screen Widgets</h3>
-          <p data-i18n="features.widgets.desc">Last Request and Request Status on your Home Screen, plus a Lock Screen circular — all free. The Endpoint Monitor widget, showing a watched endpoint's last result, is PRO.</p>
+          <img src="screenshot-2.png" alt="A REST response with status, timing and the JSON body as a tree" class="step-shot" loading="lazy" width="660" height="1434">
+          <h3 data-i18n="steps.2.title">2. Run it and read the response</h3>
+          <p data-i18n="steps.2.desc">Status, timing, headers and JSON — as a tree or as raw text.</p>
         </article>
         <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128269;</span>
-          <span class="tier tier-free" data-i18n="features.tier.free">Free</span>
-          <h3 data-i18n="features.spotlight.title">Spotlight Search</h3>
-          <p data-i18n="features.spotlight.desc">Your request names and hosts are searchable straight from the Home Screen. Tap a result to open it. Secrets and environment values are never indexed, and you can switch indexing off.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#9209;</span>
-          <span class="tier tier-free" data-i18n="features.tier.free">Free</span>
-          <h3 data-i18n="features.cancel.title">Cancel a Running Request</h3>
-          <p data-i18n="features.cancel.desc">One tap stops an in-flight request and tears the connection down. The cancelled attempt still lands in your history.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#127850;</span>
-          <span class="tier tier-free" data-i18n="features.tier.free">Free</span>
-          <h3 data-i18n="features.findbar.title">Find in Response &amp; Cookie Replay</h3>
-          <p data-i18n="features.findbar.desc">Search inside a response body with a live match count, copy a single header value, and send a returned Set-Cookie straight back as a request header.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128203;</span>
-          <span class="tier tier-free" data-i18n="features.tier.free">Free</span>
-          <h3 data-i18n="features.curl.title">cURL Import — Free</h3>
-          <p data-i18n="features.curl.desc">Paste a cURL command, get a request. Free for everyone, and staying free — bulk Postman and OpenAPI imports are the PRO ones.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128225;</span>
-          <h3 data-i18n="features.requests.title">HTTP Requests</h3>
-          <p data-i18n="features.requests.desc">GET, POST, PUT, PATCH, DELETE with full header and body control. Multipart/form-data with file upload built in.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#9881;</span>
-          <h3 data-i18n="features.graphql.title">GraphQL</h3>
-          <p data-i18n="features.graphql.desc">Dedicated query editor with variables, operation names, and pretty-printed responses. Run queries, mutations, and subscriptions.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128268;</span>
-          <h3 data-i18n="features.websocket.title">WebSocket</h3>
-          <p data-i18n="features.websocket.desc">Open WebSocket sessions, send text and binary frames, and inspect every message in a live transcript.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128193;</span>
-          <h3 data-i18n="features.collections.title">Collections &amp; Environments</h3>
-          <p data-i18n="features.collections.desc">Group requests into named, colour-coded collections. Switch between dev, staging, and production with one tap.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128274;</span>
-          <h3 data-i18n="features.vault.title">Secrets Vault</h3>
-          <p data-i18n="features.vault.desc">Store API keys securely in the iOS Keychain with Face ID / Touch ID protection. Secrets never leave your device.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128200;</span>
-          <h3 data-i18n="features.history.title">Response History &amp; Diff</h3>
-          <p data-i18n="features.history.desc">Compare responses with JSON diff. Track status, latency, and payload changes over time.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128172;</span>
-          <h3 data-i18n="features.shortcuts.title">Siri &amp; Shortcuts</h3>
-          <p data-i18n="features.shortcuts.desc">"Run Saved Request" and "Send HTTP Request" App Intents for Siri, the Shortcuts app, and Focus automations.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">&#128257;</span>
-          <h3 data-i18n="features.import.title">Import &amp; Export</h3>
-          <p data-i18n="features.import.desc">Import Postman v2.1 collections, paste cURL commands to create requests, and export back to cURL.</p>
+          <img src="screenshot-3.png" alt="Saved requests grouped in collections" class="step-shot" loading="lazy" width="660" height="1434">
+          <h3 data-i18n="steps.3.title">3. Keep working</h3>
+          <p data-i18n="steps.3.desc">Save requests in collections, look at response history, and diff two responses. Free.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Screenshots Section -->
-  <section class="screenshots" aria-labelledby="screenshots-title">
-    <div class="container">
+  <!-- What PRO adds -->
+  <section class="pro-section" aria-labelledby="pro-title">
+    <div class="container split">
+      <img src="screenshot-4.png" alt="GraphQL editor with a query and variables" class="split-shot" loading="lazy" width="660" height="1434">
+      <div class="split-text">
+        <h2 id="pro-title" data-i18n="pro.title">What PRO adds</h2>
+        <ul class="pro-list">
+          <li data-i18n="pro.item.env">Environments and variables</li>
+          <li data-i18n="pro.item.vault">A secrets vault in the iOS Keychain</li>
+          <li data-i18n="pro.item.import">Postman and OpenAPI import</li>
+          <li>OAuth 2.0</li>
+          <li>GraphQL</li>
+          <li>WebSocket</li>
+          <li data-i18n="pro.item.checks">Background endpoint checks</li>
+        </ul>
+        <p data-i18n="pro.pricing">PRO is a one-time lifetime purchase, or yearly with a seven-day free trial. Prices for your region are shown in the app.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section class="features" aria-labelledby="privacysec-title">
+    <div class="container split">
+      <div class="split-text">
+        <h2 id="privacysec-title" data-i18n="privacysec.title">Private by design</h2>
+        <p data-i18n="privacysec.body">Your requests, responses and secrets are stored on your device. No account, no analytics, no third-party SDKs. Requests go from your device straight to the API you are calling. ProbePad does not sync between devices.</p>
+      </div>
+      <img src="screenshot-5.png" alt="Privacy screen: data is stored on the device, no account, no analytics" class="split-shot" loading="lazy" width="660" height="1434">
+    </div>
+  </section>
+
+  <!-- Background checks: a supporting section -->
+  <section class="whats-new" aria-labelledby="background-title">
+    <div class="container supporting">
       <div class="section-header">
-        <h2 id="screenshots-title" data-i18n="screenshots.title">See It in Action</h2>
+        <h2 id="background-title" data-i18n="background.title">Background checks</h2>
       </div>
-      <div class="screenshots-carousel" role="region" aria-label="App screenshots">
-        <img src="screenshot-1.png" alt="Lock Screen with the Endpoint Monitor widget showing a 503 and the failure notification ProbePad sends" class="screenshot" loading="lazy">
-        <img src="screenshot-2.png" alt="Live WebSocket session with sent and received text frames" class="screenshot" loading="lazy">
-        <img src="screenshot-3.png" alt="GraphQL editor with a query, variables and schema-aware completion" class="screenshot" loading="lazy">
-        <img src="screenshot-4.png" alt="REST request editor on iPad with headers, authentication and JSON body" class="screenshot" loading="lazy">
-        <img src="screenshot-5.png" alt="iPad multi-pane layout with collections and the request editor side by side" class="screenshot" loading="lazy">
-        <img src="screenshot-6.png" alt="Privacy and Security screen: all data stays on device, no account, no telemetry" class="screenshot" loading="lazy">
-      </div>
+      <p data-i18n="background.body">With PRO you can mark a request as watched. ProbePad runs it again in the background and notifies you if it fails. iOS decides when background checks run, so this is not real-time monitoring — ProbePad shows when each endpoint was last checked.</p>
+      <p data-i18n="background.widgets">Home Screen and Lock Screen widgets show a saved request's last status. Free.</p>
     </div>
   </section>
 
   <!-- What's New Section -->
-  <section class="whats-new" aria-labelledby="whatsnew-title">
+  <section class="features" aria-labelledby="whatsnew-title">
     <div class="container">
       <div class="section-header">
-        <span class="version-tag">v1.6.0</span>
+        <span class="version-tag">v1.6.1</span>
         <h2 id="whatsnew-title" data-i18n="whatsnew.title">What's New</h2>
       </div>
       <div class="whats-new-list">
         <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#128065;</span>
+          <span class="whats-new-icon" aria-hidden="true">&#128640;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item1.title">Endpoint Monitoring (PRO)</h3>
-            <p data-i18n="whatsnew.item1.desc">Mark a saved request as watched and ProbePad runs it in the background, then notifies you when it starts failing. The app tells you when the last check happened.</p>
+            <h3 data-i18n="whatsnew.item1.title">New start screen</h3>
+            <p data-i18n="whatsnew.item1.desc">Paste a cURL command, try an example request, or import a collection — right from first launch, and again whenever your request list is empty.</p>
           </div>
         </div>
         <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#128241;</span>
+          <span class="whats-new-icon" aria-hidden="true">&#128203;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item2.title">Widgets</h3>
-            <p data-i18n="whatsnew.item2.desc">Last Request and Request Status on the Home Screen, Request Status as a Lock Screen circular, and Endpoint Monitor (PRO) showing a watched endpoint's last result.</p>
+            <h3 data-i18n="whatsnew.item2.title">Clearer cURL import</h3>
+            <p data-i18n="whatsnew.item2.desc">The cURL import sheet has a Paste button and says plainly that nothing is sent until you run the request yourself.</p>
           </div>
         </div>
         <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#128269;</span>
+          <span class="whats-new-icon" aria-hidden="true">&#128257;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item3.title">Spotlight</h3>
-            <p data-i18n="whatsnew.item3.desc">Request names and hosts are searchable from the Home Screen; tap a result to open the request. Secrets and environment values are never indexed, and there is a switch for it in Settings.</p>
+            <h3 data-i18n="whatsnew.item3.title">Import from the + menu (PRO)</h3>
+            <p data-i18n="whatsnew.item3.desc">Postman and OpenAPI import are now in the + menu as well as in Settings.</p>
           </div>
         </div>
         <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#9209;</span>
+          <span class="whats-new-icon" aria-hidden="true">&#11088;</span>
           <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item4.title">Cancel a Running Request</h3>
-            <p data-i18n="whatsnew.item4.desc">One tap stops an in-flight request and tears the connection down. The cancelled attempt is written to history.</p>
-          </div>
-        </div>
-        <div class="whats-new-item">
-          <span class="whats-new-icon" aria-hidden="true">&#127850;</span>
-          <div class="whats-new-content">
-            <h3 data-i18n="whatsnew.item5.title">Find in Response &amp; Cookie Replay</h3>
-            <p data-i18n="whatsnew.item5.desc">A find bar over the response body with a live match count, one-tap copy of a header value, and a returned Set-Cookie sent straight back as a request header.</p>
+            <h3 data-i18n="whatsnew.item4.title">A PRO screen that shows what you get</h3>
+            <p data-i18n="whatsnew.item4.desc">The PRO screen opened from Settings now shows what PRO adds, instead of leading with a single feature.</p>
           </div>
         </div>
       </div>
@@ -292,11 +303,6 @@
           <span class="pro-badge">PRO</span>
           <p class="pro-price" data-i18n="pricing.yearly.title">Yearly</p>
           <p class="pro-price-note" data-i18n="pricing.yearly.desc">US$9.99 a year, with seven days free. Cancel any time in Settings.</p>
-        </div>
-        <div class="pro-card">
-          <span class="pro-badge">PRO</span>
-          <p class="pro-price" data-i18n="pricing.launch.title">Launch offer</p>
-          <p class="pro-price-note" data-i18n="pricing.launch.desc">Lifetime for US$9.99 until October 17, 2026.</p>
         </div>
       </div>
       <div class="pricing-cta">
